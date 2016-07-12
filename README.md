@@ -1,4 +1,4 @@
-# ResBaz-2016 Site
+# ResBaz-2017 Site
 
 Welcome! This repo contains the website for the 2017 Research Bazaar festival. If you'd like to learn more about how to bring ResBaz to your town, have a look at [this blog](https://resbazblog.wordpress.com/) - we'd be delighted to work with you!
 
