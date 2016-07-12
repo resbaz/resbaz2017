@@ -1,0 +1,16 @@
+# Site settings
+title: Your awesome title
+email: your-email@domain.com
+
+# local dav
+#baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# deployment
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://resbaz2017.com" # the base hostname & protocol for your site
+
+permalink: :permalink/
+
+# Build settings
+markdown: kramdown

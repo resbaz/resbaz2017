@@ -1,0 +1,148 @@
+---
+layout: home
+splashImage: https://farm1.staticflickr.com/710/22294999764_cc57e2af25_z.jpg
+sponsors:
+ - name: 'Sponsor Number One'
+   img: fake-sponsor.png
+ - name: 'Sponsor Number Two'
+   img: fake-sponsor.png
+ - name: 'Sponsor Number Three'
+   img: fake-sponsor.png
+---
+
+<!-- Header -->
+<header style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{page.splashImage}}); background-repeat: no-repeat; background-size: cover; ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive lead-image" src="img/profile.png" alt="">
+                <div class="intro-text">
+                    <span class="name">Research Bazaar, Feb 2016</span>
+                    <hr class="star-light">
+                    <span class="skills">Skills Sharing - Digital Literacy - Research Collaboration<br><br></span>
+                    <p class="come-along page-scroll">
+                      <a href="#locations" class="btn btn-lg btn-success">
+                        Come Along!
+                      </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>About</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>The Research Bazaar is a worldwide festival promoting the digital literacy emerging at the center of modern research.</p>
+              <p>During the first week of February 2016, events will be held at a number of university campuses around the globe. The aim of these events is to equip researchers from all career stages with the digital skills and tools required to do their research better, faster and smarter. A unique blend of academic and social life, ResBaz is an event unlike any academic conference you've ever been to.</p>
+              <p>To read more about the history and philosophy of ResBaz, check out these blog posts from <a href="https://theresearchwhisperer.wordpress.com/2015/12/08/research-bazaar/">The Research Whisperer</a> and <a href="http://software-carpentry.org/blog/2015/12/resbaz-feb2016.html">Software Carpentry</a>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+<!-- Locations Grid Section -->
+<section id="locations">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Locations</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p>Learn more about your nearest ResBaz event:</p>     
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <ul id="location-list" class="list-unstyled">
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <script src="https://embed.github.com/view/geojson/resbaz/resbaz-2016-02-01/gh-pages/sites.geojson"></script>
+                <p>No site near you? <a href="https://github.com/resbaz/cookbook/wiki">Help start one!</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Contact ResBaz</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2 text-center contact-buttons">
+                <p>Interested in the Research Bazaar? We want to hear from you! Email us your questions, start a conversation about bringing ResBaz to your home town, or just say hi; you can also always find us on Twitter.</p>
+
+                <a href="mailto:research.bazaar@gmail.com" class="btn btn-lg btn-outline light-bkg">
+                    <i class="fa fa-envelope"></i> Email
+                </a>
+                <a href="https://twitter.com/resbaz" class="btn btn-lg btn-outline light-bkg">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+            </div>
+
+            <div class="col-lg-4 text-center">
+            <a class="twitter-timeline"  href="https://twitter.com/ResBaz" data-widget-id="660556922945302528">Tweets by @ResBaz</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+<!-- Sponsors -->
+<!-- <section id="sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Our Sponsors</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>Many thanks to all our sponsors for making the Research Bazaar possible.</p>
+              {% for sponsor in page.sponsors %}
+                  <div class='sponsor-tile'>
+                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
+                      <h4>{{ sponsor.name }}</h4>
+                  </div>
+              {% endfor %}
+          </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Chat -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'resbaz/resbaz'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
