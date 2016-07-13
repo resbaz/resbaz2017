@@ -1,1 +1,29 @@
 
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[144.96289,-37.79901]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='https://2017.resbaz.com/melbourne'>Melbourne</a>"
+            }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[147.326672, -42.903543]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='https://2017.resbaz.com/hobart'>Hobart</a>"
+            }
+        }
+    ]
+}
