@@ -13,8 +13,9 @@ In addition to the main page, this website also offers local listings for each s
 This website is built from the [Start Bootstrap Freelancer theme](https://github.com/IronSummitMedia/startbootstrap-freelancer), on [Jekyll](https://jekyllrb.com/) and [Bootstrap](http://getbootstrap.com/). If you'd like to build it on your local machine, do the following:
 
  - [Install Jekyll](http://jekyllrb.com/docs/installation/)
- - in the base directory of this repo, do `jekyll serve --future`
- - if all has gone well, you'll be able to visit your version of the main website at `http://127.0.0.1:4000/` and the various city pages at `http://127.0.0.1:4000/melbourne`, `http://127.0.0.1:4000/auckland`, etc. 
+   - If your operating system is OS X El Capitan, modify the instructions at that link by changing `gem install jekyll` to `gem install -n /usr/local/bin jekyll`. The reason for this is explained [here](http://stackoverflow.com/questions/32891965/error-while-executing-gem-errnoeperm-operation-not-permitted).
+ - In the base directory of this repo, do `jekyll serve --future`
+ - If all has gone well, you'll be able to visit your version of the main website at `http://127.0.0.1:4000/` and the various city pages at `http://127.0.0.1:4000/melbourne`, `http://127.0.0.1:4000/auckland`, etc. 
 
 ### Contribution Guide
 
