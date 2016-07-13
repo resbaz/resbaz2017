@@ -1,0 +1,17 @@
+{
+    "type": "FeatureCollection",
+    "features": [    
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[147.326672, -42.903543] 
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "UTAS Sandy Bay"
+            }
+        },
+
+    ]
+}
