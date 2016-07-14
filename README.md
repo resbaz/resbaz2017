@@ -12,10 +12,9 @@ In addition to the main page, this website also offers local listings for each s
 
 This website is built from the [Start Bootstrap Freelancer theme](https://github.com/IronSummitMedia/startbootstrap-freelancer), on [Jekyll](https://jekyllrb.com/) and [Bootstrap](http://getbootstrap.com/). If you'd like to build it on your local machine, do the following:
 
- - [Install Jekyll](http://jekyllrb.com/docs/installation/)
-   - If your operating system is OS X El Capitan, modify the instructions at that link by changing `gem install jekyll` to `gem install -n /usr/local/bin jekyll`. The reason for this is explained [here](http://stackoverflow.com/questions/32891965/error-while-executing-gem-errnoeperm-operation-not-permitted).
- - In the base directory of this repo, do `jekyll serve --future`
- - If all has gone well, you'll be able to visit your version of the main website at `http://127.0.0.1:4000/` and the various city pages at `http://127.0.0.1:4000/melbourne`, `http://127.0.0.1:4000/auckland`, etc. 
+ - [Install dependencies using Bundler](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-2-install-jekyll-using-bundler): `bundle install`
+ - In the base directory of this repo, do `bundle exec jekyll serve --future`
+ - If all has gone well, you'll be able to visit your version of the main website at `http://127.0.0.1:4000/` and the various city pages at `http://127.0.0.1:4000/melbourne`, `http://127.0.0.1:4000/auckland`, etc.
 
 ### Contribution Guide
 
@@ -23,4 +22,3 @@ Feel free to send us a pull request, following these guidelines:
 
  - Please start by opening an issue to let us know what you'd like to change or add, so we can discuss the best way to do so.
  - Please keep each PR less than 500 lines.
-
