@@ -12,48 +12,23 @@ map: sites/template.geojson
 
 accommodation: Your accommodation text.
 
-menu: Your Menu text.
-
-classes:
- - class: Main Streams
-   tools:
-    - name: tool1
-      id: id1
-      blurb: Description of tool # 1.
-    - name: tool2
-      id: id2
-      blurb: Description of tool # 2.
-    - name: tooln
-      id: idn
-      blurb: Description of tool # n.
-
- - class: Minor Electives
-   tools:
-    - name: tool1
-      id: id1
-      blurb: Description of tool # 1.
-    - name: tool2
-      id: id2
-      blurb: Description of tool # 2.
-    - name: tooln
-      id: idn
-      blurb: Description of tool # n.
+about: Your about text.
 
 schedule: Your schedule description.
 days:
- - day: Monday February 1
+ - day: Tuesday, 31 January
    sessions:
     - title: session 1
     - title: session 2
     - title: session 3
     - title: evening
- - day: Tuesday February 2
+ - day: Wednesday, 1 February
    sessions:
     - title: session 1
     - title: session 2
     - title: session 3
     - title: evening
- - day: Wednesday February 3
+ - day: Thursday, 2 February
    sessions:
     - title: session 1
     - title: session 2
@@ -66,9 +41,9 @@ speakers:
  - name: TBC
    img: img/speakerTBC.jpg
    blurb: Our KeyStory speakers are still to be confirmed - watch this space!
- - name: You!
-   img: img/sponsors/fake-sponsor.png
-   blurb: We want you to help lead a session; let us know if you're interested when you <a href="#registerSection">register</a>.
+ - name: TBC
+   img: img/speakerTBC.jpg
+   blurb: Our KeyStory speakers are still to be confirmed - watch this space!
 sponsors:
  - name: 'Sponsor Number One'
    img: fake-sponsor.png
@@ -93,7 +68,7 @@ sponsors:
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#menuSection">Menu</a>
+                    <a href="#aboutSection">About</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#scheduleSection">Schedule</a>
@@ -114,45 +89,32 @@ sponsors:
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive lead-image-local" src="{{site.baseurl}}/img/profile.png" alt=""></img>
                 <div class="intro-text">
+                    <p></br></br></p>
                     <span class="name">{{page.location}}</span>
                     <hr class="star-light"></hr>
                     <span class="skills">{{page.dates}}</span>
+                    <p></br></br></p>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Menu -->
-<section id='menuSection'>
+<!-- About -->
+<section id='aboutSection'>
     <div class = 'container' id = 'tool-list'>
         <div class = "row">
             <div class = "col-lg-12 text-center">
-                <h1> Menu </h1>
+                <h1>About</h1>
                 <hr class = "star-primary">
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-              <p>{{page.menu}}</p>
+              <p>{{page.about}}</p>
             </div>
         </div>
-
-            {% for d in page.classes %}
-                <div class = "col-md-6 text-center">
-                    <h4>{{d.class}}</h4>
-                    <div class = 'list-group'>
-                        {% for tool in d.tools %}
-                        <div class = 'list-group-item text-left'>
-                            <a class='menuItem' id = {{ tool.id }} >{{ tool.name }}</a><br>
-                            <p class = 'hidden' id = {{ tool.id}}Blurb > {{ tool.blurb }} </p>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            {% endfor %}
     </div>
 </section>
 
@@ -169,7 +131,7 @@ sponsors:
             </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-              <p>{{page.schedule}}</p>
+              <p>{{page.schedule}}</br></br></p>
             </div>
         </div>
             {% for d in page.days %}
@@ -215,21 +177,8 @@ sponsors:
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-lg-offset-2">
-                <p>Register here for the {{page.location}} Research Bazaar.</p>
-            </div>
-            <div class="col-lg-4">
-                <p>The registration process starts with a Pre-Assessment Survey, so that we can create the best possible experience for you. Use the promo code given to you at the end of the survey to complete the registration form.</p>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://docs.google.com/forms/d/1io9-YyETAl9sQ_NkIjehq4juemgnlaXilG17USHvjug/edit" target = "_blank" class="btn btn-lg btn-outline light-bkg">
-                        <i class="fa fa-pencil"></i> Pre-Assessment Survey
-                    </a>
-                    <a href="" target="_blank" class="btn btn-lg btn-outline light-bkg">
-                        <i class="fa fa-users"></i> Register
-                    </a>
-                </div>  
+            <div class="col-lg-12 text-center">
+                <p>Your registration text.</p>
             </div>
         </div>
     </div>
@@ -259,27 +208,8 @@ sponsors:
 
 <hr class='divider'></hr>
 
-<!-- Accommodation -->
-<section id="acommodation">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Accommodation</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-              <p>{{page.accommodation}}</p>
-          </div>
-        </div>
-    </div>
-</section>
-
-<hr class='divider'></hr>
-
 <!-- Sponsors -->
-<!-- <section id="sponsors">
+<section id="sponsors">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -289,7 +219,7 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-              <p>Many thanks to all our sponsors for helping bring the Resarch Bazaar to the {{page.location}}.</p>
+              <p>Many thanks to our sponsors for helping to bring the Research Bazaar to {{page.location}}.</p>
               {% for sponsor in page.sponsors %}
                   <div class='sponsor-tile'>
                       <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
@@ -299,7 +229,7 @@ sponsors:
           </div>
         </div>
     </div>
-</section> -->
+</section>
 
 
 <!-- TEST SCRIPT -->
