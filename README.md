@@ -13,7 +13,7 @@ In addition to the main page, this website also offers local listings for each s
 This website is built from the [Start Bootstrap Freelancer theme](https://github.com/IronSummitMedia/startbootstrap-freelancer), on [Jekyll](https://jekyllrb.com/) and [Bootstrap](http://getbootstrap.com/). If you'd like to build it on your local machine, do the following:
 
  - [Install dependencies using Bundler](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-2-install-jekyll-using-bundler): `bundle install`
- - In the base directory of this repo, do `bundle exec jekyll serve --future`
+ - In the base directory of this repo, do `bundle exec jekyll serve`
  - If all has gone well, you'll be able to visit your version of the main website at `http://127.0.0.1:4000/` and the various city pages at `http://127.0.0.1:4000/melbourne`, `http://127.0.0.1:4000/auckland`, etc.
 
 ### Contribution Guide
