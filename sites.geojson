@@ -10,7 +10,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://2017.resbaz.com/melbourne'>Melbourne</a>"
+                "details": "<a href='/melbourne'>Melbourne</a>"
             }
         },
 
@@ -22,7 +22,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='https://2017.resbaz.com/hobart'>Hobart</a>"
+                "details": "<a href='/hobart'>Hobart</a>"
             }
         }
     ]
