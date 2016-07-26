@@ -24,6 +24,18 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='/hobart'>Hobart</a>"
             }
+        },
+        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[153.028357,-27.477418]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/brisbane'>Brisbane</a>"
+            }
         }
     ]
 }
