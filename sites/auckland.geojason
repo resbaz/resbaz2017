@@ -1,0 +1,16 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[-36.851609,174.771291]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='https://2016-02-01.resbaz.com/auckland/'>Auckland</a>"
+            }
+        }
+    ]
+}
