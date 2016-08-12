@@ -1,6 +1,7 @@
 
 {
     "type": "FeatureCollection",
+
     "features": [
         {
             "type": "Feature",
@@ -36,6 +37,34 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='/brisbane'>Brisbane</a>"
             }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[174.769050,-36.852118]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/auckland'>Auckland</a>"
+            }
+        },
+
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[170.513132,-45.863208]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/dunedin'>Dunedin</a>"
+            }
         }
-    ]
+
+
+
+]
 }
