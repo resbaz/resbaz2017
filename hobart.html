@@ -10,10 +10,6 @@ splashImage: img/hobart_cropped.png
 
 map: sites/hobart.geojson
 
-accommodation: Your accommodation text.
-
-about: Your about text.
-
 schedule: Your schedule description.
 days:
  - day: Tuesday, 31 January
@@ -70,15 +66,15 @@ sponsors:
                 <li class="page-scroll">
                     <a href="#aboutSection">About</a>
                 </li>
-                <li class="page-scroll">
+                <!-- li class="page-scroll">
                     <a href="#scheduleSection">Schedule</a>
-                </li>
+                </li -->
                 <li class="page-scroll">
                     <a href="#registerSection">Register</a>
                 </li>
-                <li class="page-scroll">
+                <!-- li class="page-scroll">
                     <a href="#speakerSection">Speakers</a>
-                </li>
+                </li -->
             </ul>
         </div>
     </div>
@@ -112,17 +108,44 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-              <p>{{page.about}}</p>
+              <p><a href="http://datasciencehobart.github.io/">Data Science Hobart</a> 
+              are pleased to announce that they will be hosting a 3-day ResBaz confernece in early 2017.
+              The event is currently in the planning phase. 
+              Please see <a href="https://heydejan.gitbooks.io/resbaz-cookbook/content/sites/hobart.html">this link</a>
+              for details of the organising schedule and draft program.  
+              </p>
             </div>
         </div>
     </div>
 </section>
 
+<hr class='divider'></hr>
+
+<!-- Registration -->
+<section id="registerSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Come along</h1>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Registrations will open in November 2016.
+                If you'd like to be notified as soon as  registrations go live,
+                please sign up to the Data Science Hobart
+                <a href="http://tinyletter.com/datasciencehobart">mailing list</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <hr class='divider'></hr>
 
 <!-- Schedule -->
-<section id='scheduleSection'>
+<!-- section id='scheduleSection'>
     <div class='container'>
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -146,7 +169,7 @@ sponsors:
             {% endfor %}
         </div>
     </div>
-</section>
+</section -->
 
 <hr class='divider'></hr>
 
@@ -167,27 +190,8 @@ sponsors:
 
 <hr class='divider'></hr>
 
-<!-- Registration -->
-<section id="registerSection">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>Come along</h1>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <p>Your registration text.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<hr class='divider'></hr>
-
 <!-- Speakers -->
-<section id='speakerSection'>
+<!-- section id='speakerSection'>
     <div class='container'>
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -206,10 +210,10 @@ sponsors:
     </div>
 </section>
 
-<hr class='divider'></hr>
+<hr class='divider'></hr -->
 
 <!-- Sponsors -->
-<section id="sponsors">
+<!-- section id="sponsors">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -229,7 +233,7 @@ sponsors:
           </div>
         </div>
     </div>
-</section>
+</section -->
 
 
 <!-- TEST SCRIPT -->
