@@ -1,0 +1,16 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[174.768969,-36.853137] 
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "UoA Science Building"
+            }
+        }
+    ]
+}
