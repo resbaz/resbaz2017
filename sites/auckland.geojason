@@ -1,15 +1,27 @@
 {
     "type": "FeatureCollection",
-    "features": [
+    "features": [    
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[174.769050,-36.852118]
+                "coordinates":[174.768969,-36.853137] 
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "University of Auckland campus"
+                "details": "UoA Science Building Open Space"
+            }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[174.768298, -36.852727] 
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "Seminar Rooms"
             }
         }
     ]
