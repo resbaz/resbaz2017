@@ -4,18 +4,24 @@ permalink: auckland
 
 location: Auckland
 
-dates: 8 February - 10 February, 2017
+dates: 7 February - 9 February, 2017
 
 splashImage: /img/auckland.jpg
 
 map: sites/auckland.geojson
 
 
-about: Following the success of the past two years Auckland is hosting ResBaz2017!
+about: Following the success of the past two years, Auckland is hosting ResBaz2017!</br></br>We are in the planning stages now and seeking expressions of interest. If you have suggestions for next years event or want be invovled we would love to hear from you.</br></br>Click <a href="https://docs.google.com/forms/d/e/1FAIpQLSdg3vMQKVtMGAFXPj8fBupPrS_idNt4f181T4z6LDDcpHqSeA/viewform">here</a> to drop us a line and tell us your ideas or offer support.
 
-schedule: Your schedule description.
+schedule: We are planning the schedule now. Stay tuned! 
 days:
- - day: Wednesday, 8 February 
+ - day: Tuesday, 7 February 
+   sessions:
+    - title: session 1
+    - title: session 2
+    - title: session 3
+    - title: evening
+ - day: Wednesday, 8 February
    sessions:
     - title: session 1
     - title: session 2
@@ -27,22 +33,16 @@ days:
     - title: session 2
     - title: session 3
     - title: evening
- - day: Friday, 10 February
-   sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
 speakers:
  - name:
    img: img/placehold.jpg
    blurb:
  - name: TBC
    img: img/speakerTBC.jpg
-   blurb: Our KeyStory speakers are still to be confirmed - watch this space!
+   blurb: Our KeyStory speakers are still to be confirmed - maybe it could be you! Watch this space.
  - name: TBC
    img: img/speakerTBC.jpg
-   blurb: Our KeyStory speakers are still to be confirmed - watch this space!
+   blurb: Our KeyStory speakers are still to be confirmed - maybe it could be you! Watch this space.
 sponsors:
  - name: 'Sponsor Number One'
    img: fake-sponsor.png
@@ -56,12 +56,12 @@ sponsors:
 <nav>
     <div class="container">
 
-        <div class='col-md-8'>
+        <div class='col-md-6'>
             <a href="https://2017.resbaz.com/">
                 <img class='nav-logo' src='https://raw.githubusercontent.com/resbaz/resbaz2017/gh-pages/img/resbaz_logos/ResBaz_transparent_cropped.png'></img>
             </a>
         </div>
-        <div class='col-md-4'>
+        <div class='col-md-6'>
             <ul class="nav navbar-nav navbar-right nav-list">
                 <li class="hidden">
                     <a href="#page-top"></a>
@@ -77,6 +77,10 @@ sponsors:
                 </li>
                 <li class="page-scroll">
                     <a href="#speakerSection">Speakers</a>
+                </li>
+                </li>
+                <li class="page-scroll">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdg3vMQKVtMGAFXPj8fBupPrS_idNt4f181T4z6LDDcpHqSeA/viewform">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -157,6 +161,9 @@ sponsors:
                     <h1>Venue</h1>
                     <hr class="star-primary">
                 </div>
+                <div class="col-lg-12 text-center">
+              <p>ResBaz Auckland 2017 will be held in and around the fabulous new UoA Science building.</p>
+            </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <script src="https://embed.github.com/view/geojson/resbaz/resbaz2017/gh-pages/{{page.map}}"></script>
             </div>
@@ -177,7 +184,7 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <p>Your registration text.</p>
+                <p>Registration is not yet open. But stay tuned as planning progresses.</p>
             </div>
         </div>
     </div>
@@ -218,7 +225,7 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-              <p>Many thanks to our sponsors for helping to bring the Research Bazaar to {{page.location}}.</p>
+              <p>Get in touch if you would like to help bring the Research Bazaar to {{page.location}}.</p>
               {% for sponsor in page.sponsors %}
                   <div class='sponsor-tile'>
                       <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
