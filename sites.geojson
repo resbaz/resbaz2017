@@ -51,6 +51,17 @@
             }
         },
 
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[170.513132, -45.863208]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/christchurch'>Christchurch</a>"
+            }
+        },
 
         {
             "type": "Feature",
@@ -68,3 +79,4 @@
 
 ]
 }
+
