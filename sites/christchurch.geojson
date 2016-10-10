@@ -1,0 +1,19 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[
+									172.58246898651123,
+									-43.52363591729539
+					]
+            },
+            "properties": {
+                "marker-color": "#cc0011",
+                "details": "Puaka James Hight, University of Canterbury Central Library"
+            }
+        }
+    ]
+}
