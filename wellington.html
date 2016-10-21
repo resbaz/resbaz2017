@@ -1,0 +1,257 @@
+---
+layout: site
+permalink: wellington
+
+location: Wellington
+
+dates: 8 February - 10 February, 2017
+
+splashImage: /img/wellington.jpg
+
+map: sites/wellington.geojson
+
+
+about: Following our successful inaugural Wellington ResBaz in April, Victoria University is hosting ResBaz2017!</br></br>We are in the planning stages now and seeking expressions of interest. If you have suggestions for next years event or want be involved we would love to hear from you.</br></br>Click <a href="https://docs.google.com/forms/d/1W9mKiDJhzG3M0QaFWqdAL8cOKruoz0WkfLGWaw7fHZo/viewform">here</a> to drop us a line and tell us your ideas or offer support.
+
+schedule: We are planning the schedule now. Stay tuned! 
+days:
+ - day: Wednesday, 8 February 
+   sessions:
+    - title: session 1
+    - title: session 2
+    - title: session 3
+    - title: evening
+ - day: Thursday, 9 February
+   sessions:
+    - title: session 1
+    - title: session 2
+    - title: session 3
+    - title: evening
+ - day: Friday, 10 February
+   sessions:
+    - title: session 1
+    - title: session 2
+    - title: session 3
+    - title: evening
+speakers:
+ - name:
+   img: img/placehold.jpg
+   blurb:
+ - name: TBC
+   img: img/speakerTBC.jpg
+   blurb: Our KeyStory speakers are still to be confirmed - maybe it could be you! Watch this space.
+ - name: TBC
+   img: img/speakerTBC.jpg
+   blurb: Our KeyStory speakers are still to be confirmed - maybe it could be you! Watch this space.
+sponsors:
+ - name: 'Sponsor Number One'
+   img: fake-sponsor.png
+ - name: 'Sponsor Number Two'
+   img: fake-sponsor.png
+ - name: 'Sponsor Number Three'
+   img: fake-sponsor.png
+---
+
+<!-- Navigation -->
+<nav>
+    <div class="container">
+
+        <div class='col-md-6'>
+            <a href="https://2017.resbaz.com/">
+                <img class='nav-logo' src='https://raw.githubusercontent.com/resbaz/resbaz2017/gh-pages/img/resbaz_logos/ResBaz_transparent_cropped.png'></img>
+            </a>
+        </div>
+        <div class='col-md-6'>
+            <ul class="nav navbar-nav navbar-right nav-list">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#aboutSection">About</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#scheduleSection">Schedule</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#registerSection">Register</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#speakerSection">Speakers</a>
+                </li>
+                </li>
+                <li class="page-scroll">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdg3vMQKVtMGAFXPj8fBupPrS_idNt4f181T4z6LDDcpHqSeA/viewform">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{page.splashImage}}); background-repeat: no-repeat; background-size: cover; ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-text">
+                    <p></br></br></p>
+                    <span class="name">{{page.location}}</span>
+                    <hr class="star-light"></hr>
+                    <span class="skills">{{page.dates}}</span>
+                    <p></br></br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About -->
+<section id='aboutSection'>
+    <div class = 'container' id = 'tool-list'>
+        <div class = "row">
+            <div class = "col-lg-12 text-center">
+                <h1>About</h1>
+                <hr class = "star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.about}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<hr class='divider'></hr>
+
+<!-- Schedule -->
+<section id='scheduleSection'>
+    <div class='container'>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Schedule</h1>
+                <hr class="star-primary">
+            </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.schedule}}</br></br></p>
+            </div>
+        </div>
+            {% for d in page.days %}
+                <div class="col-md-4">
+                        <h4>{{ d.day }}</h4>                        
+                        <div class='list-group'>
+                        {% for session in d.sessions %}                  
+                                <a class='list-group-item'>{{ session.title }}</a>
+                        {% endfor %}
+                        </div>                        
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+<!-- Map -->
+<section id="mapSection">
+    <div class='container'>
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Venue</h1>
+                    <hr class="star-primary">
+                </div>
+                <div class="col-lg-12 text-center">
+              <p>ResBaz Auckland 2017 will be held in and around the fabulous new UoA Science building.</p>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <script src="https://embed.github.com/view/geojson/resbaz/resbaz2017/gh-pages/{{page.map}}"></script>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+<!-- Registration -->
+<section id="registerSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Come along</h1>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Registration is not yet open. But stay tuned as planning progresses.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+<!-- Speakers -->
+<section id='speakerSection'>
+    <div class='container'>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Meet Our Speakers</h1>
+                <hr class="star-primary">
+                {% for speaker in page.speakers %}
+                    <div class='col-md-3 speaker-tile'>
+                        <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>
+                        <h4>{{ speaker.name }}</h4>
+                        <p>{{ speaker.blurb }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+<!-- Sponsors -->
+<section id="sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Our Sponsors</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>Get in touch if you would like to help bring the Research Bazaar to {{page.location}}.</p>
+              {% for sponsor in page.sponsors %}
+                  <div class='sponsor-tile'>
+                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
+                      <h4>{{ sponsor.name }}</h4>
+                  </div>
+              {% endfor %}
+          </div>
+        </div>
+        <hr class="star-primary">
+        <p style="margin: auto; text-align: center;">Clock Tower title image CC-BY-NC <a href="https://www.flickr.com/photos/rohit_saxena">The.Rohit</a>
+    </div>
+</section>
+
+
+<!-- TEST SCRIPT -->
+<script> 
+    // var listElements1 = document.getElementsByClassName('list-group-item')
+    // console.log(listElements1)
+    var toolList = document.getElementById('tool-list')
+    var listElements = toolList.getElementsByClassName('list-group-item')
+    for(var i=0; i<listElements.length; i++){
+            listElements[i].children[0].onclick = function(){
+                 // toolList.getElementsByClassName('hidden').hide();
+                 var idOfBlurb = this.id + 'Blurb';
+                 document.getElementById(idOfBlurb).classList.toggle('hidden');
+            }
+        }
+
+</script>

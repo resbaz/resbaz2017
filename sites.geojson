@@ -75,6 +75,18 @@
             }
         }
 
+	
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[174.768336,-41.289328]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/wellington'>Wellington</a>"
+            }
+        }
 
 
 ]
