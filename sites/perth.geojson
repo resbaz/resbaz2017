@@ -1,0 +1,15 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[115.895357, -32.005840]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "Lower Henderson court, Curtin University"
+        }
+    ]
+}
