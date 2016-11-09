@@ -18,7 +18,12 @@ This website is built from the [Start Bootstrap Freelancer theme](https://github
 
 ### Contribution Guide
 
-Feel free to send us a pull request, following these guidelines:
+To create a page for your local site (which is referred to as City in this example), submit the following in a pull request: 
 
- - Please start by opening an issue to let us know what you'd like to change or add, so we can discuss the best way to do so.
- - Please keep each PR less than 500 lines.
+1. Create `city.html` in the base directory by copy and editing `template.html`
+2. Add City to the `sites.geojson` file in the base directory
+3. Add a `city.geojson` file in the `sites/` directory
+4. Add a `city.jpg` background image in the `img/` directory
+
+If you have any trouble creating the pull request,
+please feel free to open an issue and one of the site maintainers will help you out.
