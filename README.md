@@ -25,5 +25,8 @@ To create a page for your local site (which is referred to as City in this examp
 3. Add a `city.geojson` file in the `sites/` directory
 4. Add a `city.jpg` background image in the `img/` directory
 
+(If you've got you're own ResBaz website and you simply want to link to it rather than using our template,
+you only need step 2.)
+
 If you have any trouble creating the pull request,
 please feel free to open an issue and one of the site maintainers will help you out.
