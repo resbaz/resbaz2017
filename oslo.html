@@ -1,52 +1,47 @@
 ---
 layout: site
-permalink: perth
+permalink: oslo
 
-location: Perth
+location: Oslo
 
-dates: 30 January - 1 February, 2017
+dates: 1 February - 3 February, 2017
 
-splashImage: img/perth.jpg
+splashImage: http://www.uio.no/om/designmanual/images/0-0-forord.jpg
 
-map: sites/perth.geojson
+map: sites/oslo.geojson
+
+accommodation: To be determined, Blindern Campus.
+
+about: The university of Oslo is proud to be hosting ResBaz for the first time in 2017!</br></br>The Research Bazaar is a (free-of-charge) 3-day intensive festival and conference where researchers come together to up-skill in next generation digital research tools and scholarship. In the spirit of a marketplace or bazaar, ResBaz is a highly participatory event where researchers from many different disciplines can learn, share knowledge and skills, and have fun!</br></br>Who should attend? Researchers at ALL levels from ALL disciplines. PhD and research Masters students are especially encouraged to apply. Research technologists who support researchers to do their job should also come along!</br></br>ResBaz is particularly aimed at those new to digital research tools.
 
 schedule: Your schedule description.
 days:
- - day: Tuesday, 31 January
-   sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
  - day: Wednesday, 1 February
    sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+    - Software and Data Carpentry workshops
+    - Other workshops, TBD
  - day: Thursday, 2 February
    sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+    - Software and Data Carpentry workshops
+    - Other workshops, TBD
+ - day: Friday, 3 February
+   sessions:
+    - Software and Data Carpentry workshops
+    - Other workshops, TBD
+
 speakers:
  - name:
    img: img/placehold.jpg
    blurb:
  - name: TBC
    img: img/speakerTBC.jpg
-   blurb: Our KeyStory speakers are still to be confirmed - watch this space!
+   blurb: Our speakers/instructors are still to be confirmed - watch this space!
  - name: TBC
    img: img/speakerTBC.jpg
-   blurb: Our KeyStory speakers are still to be confirmed - watch this space!
+   blurb: Our speakers/instructors are still to be confirmed - watch this space!
 sponsors:
- - name: 'Sponsor Number One'
-   img: fake-sponsor.png
- - name: 'Sponsor Number Two'
-   img: fake-sponsor.png
- - name: 'Sponsor Number Three'
-   img: fake-sponsor.png
+ - name: 'University of Oslo Science Library'
+   img: UiO_Seal_A_ENG.png
 ---
 
 <!-- Navigation -->
@@ -66,22 +61,22 @@ sponsors:
                 <li class="page-scroll">
                     <a href="#aboutSection">About</a>
                 </li>
-                <!-- li class="page-scroll">
+                <li class="page-scroll">
                     <a href="#scheduleSection">Schedule</a>
-                </li -->
+                </li>
                 <li class="page-scroll">
                     <a href="#registerSection">Register</a>
                 </li>
-                <!-- li class="page-scroll">
+                <li class="page-scroll">
                     <a href="#speakerSection">Speakers</a>
-                </li -->
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 
 <!-- Header -->
-<header style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url({{page.splashImage}}); background-repeat: no-repeat; background-size: cover; ">
+<header style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{page.splashImage}}); background-repeat: no-repeat; background-size: cover; ">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -99,65 +94,26 @@ sponsors:
 
 <!-- About -->
 <section id='aboutSection'>
-    <div class='container' id = 'tool-list'>
-        <div class="row">
-            <div class="col-lg-12 text-center">
+    <div class = 'container' id = 'tool-list'>
+        <div class = "row">
+            <div class = "col-lg-12 text-center">
                 <h1>About</h1>
-                <hr class="star-primary">
+                <hr class = "star-primary">
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <p>
-                    We are pleased to announce that Curtin University will be
-                    hosting a 3-day Research Bazaar in the last week of
-                    January.
-                </p>
+              <p>{{page.about}}</p>
             </div>
         </div>
     </div>
 </section>
 
-<hr class='divider'></hr>
-
-<!-- Registration -->
-<section id="registerSection">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>Come along</h1>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <p>
-                    Places are limited, demand is high and we want to make
-                    sure everybody has a fair chance of partecipating in this
-                    unique event.
-                </p>
-                <p>
-                    For this reason we ask you to fill in an application and
-                    tell us a little more about yourself and what you’d like
-                    to get out of the event. This year we’re also asking all
-                    who register to design a poster which will be shown during
-                    the event.
-                </p>
-                <p>
-                    The registration process will go live in November 2016.
-                    If you'd like to be notified as it happens,
-                    please sign up to <a href="http://eepurl.com/cmz_kr">this
-                        mailing list</a>.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <hr class='divider'></hr>
 
 <!-- Schedule -->
-<!-- section id='scheduleSection'>
+<section id='scheduleSection'>
     <div class='container'>
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -171,17 +127,17 @@ sponsors:
         </div>
             {% for d in page.days %}
                 <div class="col-md-4">
-                        <h4>{{ d.day }}</h4>
+                        <h4>{{ d.day }}</h4>                        
                         <div class='list-group'>
-                        {% for session in d.sessions %}
+                        {% for session in d.sessions %}                  
                                 <a class='list-group-item'>{{ session.title }}</a>
                         {% endfor %}
-                        </div>
+                        </div>                        
                 </div>
             {% endfor %}
         </div>
     </div>
-</section -->
+</section>
 
 <hr class='divider'></hr>
 
@@ -202,8 +158,27 @@ sponsors:
 
 <hr class='divider'></hr>
 
+<!-- Registration -->
+<section id="registerSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Come along</h1>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Your registration text.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
 <!-- Speakers -->
-<!-- section id='speakerSection'>
+<section id='speakerSection'>
     <div class='container'>
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -222,10 +197,10 @@ sponsors:
     </div>
 </section>
 
-<hr class='divider'></hr -->
+<hr class='divider'></hr>
 
 <!-- Sponsors -->
-<!-- section id="sponsors">
+<section id="sponsors">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -245,11 +220,11 @@ sponsors:
           </div>
         </div>
     </div>
-</section -->
+</section>
 
 
 <!-- TEST SCRIPT -->
-<script>
+<script> 
     // var listElements1 = document.getElementsByClassName('list-group-item')
     // console.log(listElements1)
     var toolList = document.getElementById('tool-list')
