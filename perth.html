@@ -10,26 +10,33 @@ splashImage: img/perth.jpg
 
 map: sites/perth.geojson
 
-schedule: 
+schedule:
 days:
- - day: Monday, 30 January
-   sessions:
-    - title: Opening
-    - title: stream class 1 (morning)
-    - title: electives  (afternoon)
-    - title: key stories + networking
- - day: Tuesday, 31 January
-   sessions:
-    - title: stream class 2 (morning)
-    - title: stream class 3 (afternoon)
-    - title: key story + networking
-    - title: movie night
- - day: Wednesday, 1 February
-   sessions:
-    - title: stream class 4 (morning)
-    - title: electives  (afternoon)
-    - title: key story + networking
-    - title: Closing
+  - day: Monday, 30 January
+    sessions:
+      - title: Stream class 1
+      - title: Coffee at the bazaar
+      - title: Stream class 2
+      - title: Lunch
+      - title: Elective classes
+      - title: Key story
+  - day: Tuesday, 31 January
+    sessions:
+      - title: Stream class 3
+      - title: Coffee at the bazaar
+      - title: Stream class 4
+      - title: Lunch
+      - title: Stream class 5 & 6
+      - title: Key story
+      - title: Movie night
+  - day: Wednesday, 1 February
+    sessions:
+      - title: Stream class 7
+      - title: Coffee at the bazaar
+      - title: Stream class 8
+      - title: Lunch
+      - title: Elective classes
+      - title: Key story
 speakers:
  - name:
    img: img/placehold.jpg
@@ -116,8 +123,8 @@ sponsors:
         <div class="row">
             <div class="col-lg-12 text-center">
                 <p align="justify">
-                    We are pleased to announce the second Perth Research Bazaar, hosted 
-                    at Curtin University in the last week of January. 
+                    We are pleased to announce the second Perth Research Bazaar, hosted
+                    at Curtin University in the last week of January.
                 </p>
                 <p align="justify">
                  	The Perth ResBaz will offer researchers (at any stage) the opportunity
@@ -134,41 +141,38 @@ sponsors:
 
 <!-- Registration -->
 <section id="registerSection">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>Come along</h1>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <p align="justify">
-                    Places are limited, demand is high and we want to make
-                    sure everybody has a fair chance of partecipating in this
-                    unique event.
-                </p>
-                <p align="justify">
-                    For this reason we ask you to fill in an 
-                    <a href="https://goo.gl/forms/CNMdT1ZGWg5MEhkr1">application</a>  
-                    and tell us a little more about yourself and what you’d like
-                    to get out of the event. This is your chance to influence the program
-                    by telling us what you want to learn about! 
-                    We’re also asking every applicant to design a 
-                    <a href="https://docs.google.com/presentation/d/1wLtUDovYs8RZY5JXbR1N8c_KsQ6nf6L54sWzn1c9wBQ/edit?usp=sharing">
-                    poster</a> telling us a little about yourself and the tools you use
-                    for your research. The posters will be shown during the event and you might be
-                    surprised by the various disciplines that use the same tools as you.
-                </p>
-                <p align="justify">
-                    The registration process will go live in November 2016.
-                    If you'd like to be notified as it happens,
-                    please sign up to <a href="http://eepurl.com/cmz_kr">this
-                        mailing list</a>.
-                </p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>Come along</h1>
+        <hr class="star-primary">
+      </div>
     </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          Places are limited, demand is high and we want to make
+          sure everybody has a fair chance of partecipating in this
+          unique event.
+        </p>
+        <p>
+          For this reason we ask you to fill in an
+          <a href="https://goo.gl/forms/CNMdT1ZGWg5MEhkr1">application</a>
+          and tell us a little more about yourself and what you’d like
+          to get out of the event. This is your chance to influence the program
+          by telling us what you want to learn about!
+          We’re also asking every applicant to design a
+          <a href="https://docs.google.com/presentation/d/1wLtUDovYs8RZY5JXbR1N8c_KsQ6nf6L54sWzn1c9wBQ/edit?usp=sharing">
+            poster</a> telling us a little about yourself and the tools you use
+          for your research. The posters will be shown during the event and you might be
+          surprised by the various disciplines that use the same tools as you.
+        </p>
+        <p>
+          We’ll email you the outcome of your application by mid-December.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <hr class='divider'></hr>
@@ -181,37 +185,44 @@ sponsors:
                 <h1>Schedule</h1>
                 <hr class="star-primary">
             </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-              <p>{{page.schedule}}</br></br></p>
-              <p align="justify">
-              The conference runs around the Knowledge Bazaar, in the form of a tent on Lower Henderson Court Lawn. 
-All events that do not require working on laptops will be organised at or around the tent (climate permitting).
-This includes our coffee and lunch breaks as well as our evening sundowners.
-</br></br>
-The conference includes the following main components:
-</br>
-<b>Stream workshops</b> - These are run in parallel and are comprised of multiple classes. 
-You will be asked to choose your stream upon registration.
-</br>
-<b>Elective classes</b> - These are independent classes (workshops, demos or group discussions). 
-You will decide on the day what elective classes to attend, look out for what's on offers on the board in the morning.
-</br>
-<b>Social activities and networking events</b> - Community engagement is at the core of Research Bazaar! 
-Make sure you come along to as many as possible to build a continuing support network for life after ResBaz. 
-</p>
-            </div>
-        </div>
-            {% for d in page.days %}
-                <div class="col-md-4">
-                        <h4>{{ d.day }}</h4>
-                        <div class='list-group'>
-                        {% for session in d.sessions %}
-                                <a class='list-group-item'>{{ session.title }}</a>
-                        {% endfor %}
-                        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        The event runs around the Knowledge Bazaar, in the
+                        form of a tent on Lower Henderson Court lawn. Workshop
+                        that will require working on laptops will be held in
+                        the nearby building 300.
+                        Launches, coffee breaks and evening sundowners will be
+                        at the tent.
+                    </p>
                 </div>
+            </div>
+            {% for d in page.days %}
+            <div class="col-md-4">
+              <h4>{{ d.day }}</h4>
+              <div class='list-group'>
+                {% for session in d.sessions %}
+                <a class='list-group-item'>{{ session.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
             {% endfor %}
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <dl>
+                <dt>Stream workshops</dt><dd>These are run in parallel and are comprised of multiple classes.
+                  You will be asked to choose your stream upon
+                  registration.</dd>
+                <dt>Elective classes</dt><dd>These are independent classes (workshops, demos or group discussions).
+                  You will decide on the day what elective classes to
+                  attend, look out for what's on offers on the board in
+                  the morning.</dd>
+                <dt>Social activities and networking events</dt><dd>Community engagement is at the core of Research Bazaar!
+                  Make sure you come along to as many as possible to build a continuing support network for life after ResBaz.
+                </dd>
+              </dl>
+            </div>
         </div>
     </div>
 </section>

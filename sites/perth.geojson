@@ -9,7 +9,18 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "Lower Henderson court, Curtin University"
+                "details": "Lower Henderson Court"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[115.896451, -32.005281]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "Building 300, Life Sciences"
             }
         }
     ]
