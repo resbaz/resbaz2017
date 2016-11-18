@@ -59,10 +59,15 @@ speakers:
    img: img/speakerTBC.jpg
    blurb: Our KeyStory speakers are still to be confirmed - maybe it could be you! Watch this space.
 sponsors:
+ - name: 'UoA Centre for eResearch'
+   img: fake-sponsor.png
+   link: http://www.eresearch.auckland.ac.nz/en/centre-for-eresearch.html
  - name: 'UoA Faculty of Science'
    img: fake-sponsor.png
+   link: '#'
  - name: 'UoA Deputy-Vice Chancellor (Research)'
    img: fake-sponsor.png
+   link: "#"
 
 ---
 
@@ -543,7 +548,8 @@ sponsors:
               {% for sponsor in page.sponsors %}
                   <div class='sponsor-tile'>
                       <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
-                      <h4>{{ sponsor.name }}</h4>
+                     <!-- <h4>{{ sponsor.name }}</h4> -->
+                      <a href={{ sponsor.link }}> <h4>{{ sponsor.name }}</h4> </a>
                   </div>
               {% endfor %}
           </div>
