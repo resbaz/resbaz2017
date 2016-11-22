@@ -58,6 +58,11 @@ sponsors:
     img: perth/ecu.jpg
   - name: The University of Notre Dame
     img: perth/notredame.jpg
+supporters:
+  - name: 'Data61'
+    img: perth/data61.png
+  - name: KZN Group
+    img: perth/kzn.png
 ---
 
 <!-- Navigation -->
@@ -287,6 +292,31 @@ sponsors:
                   <div class='sponsor-tile'>
                       <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
                       <h4>{{ sponsor.name }}</h4>
+                  </div>
+              {% endfor %}
+          </div>
+      </div>
+  </div>
+</section>
+
+<hr class='divider'></hr -->
+
+<section id="sponsors"
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Our Supporters</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>Our supporters are contributing valuable human
+                  resources to the organisation of the event. Many thanks to them too.</p>
+              {% for supporter in page.supporters %}
+                  <div class='sponsor-tile'>
+                      <img src={{site.baseurl}}/img/sponsors/{{ supporter.img }}></img>
+                      <h4>{{ supporter.name }}</h4>
                   </div>
               {% endfor %}
           </div>
