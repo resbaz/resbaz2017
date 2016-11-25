@@ -110,8 +110,8 @@ classes:
                 <li class="page-scroll">
                     <a href="#registerSection">Register</a>
                 </li>
-                <!-- li class="page-scroll">
-                    <a href="#speakerSection">Speakers</a>
+                <li class="page-scroll">
+                    <a href="#contactSection">Contact</a>
                 </li -->
             </ul>
         </div>
@@ -180,17 +180,17 @@ classes:
                 <div class="col-lg-12 text-center">
                     <h3>Day 3: Community Day</h3>
                     <p>On the final day of the event, data service providers and individual researchers from the local
-                    community will deliver a wide variety of talks and workshops. Below is a list of confirmed classes -
-                    we would love to hear from other people in the community who are willing to present and will
-                    progressively update this list (and provide a detailed timetable) as more volunteers come forward.</p>
-            </div>
+                    community will deliver a wide variety of talks and workshops. Below is a list of confirmed classes
+                    (click the titles for a short description). If you'd be interested in presenting at Community Day, please <a href="#contact">get in touch</a>. 
+                    We will progressively update the class list (and provide a more detailed timetable) as more volunteer presenters come forward.</p>
+                </div>
             {% for d in page.classes %}
                 <div class = "col-md-6 text-center">
                     <div class = 'list-group'>
                         {% for description in d.descriptions %}
                         <div class = 'list-group-item text-center'>
                             <a class='menuItem' id = {{ description.id }} >{{ description.name }}</a><br>
-                            <p class = 'small hidden' id = {{ tool.id}}Blurb > {{ description.blurb }} </p>
+                            <p class = 'small hidden' id = {{ description.id}}Blurb > {{ description.blurb }} </p>
                         </div>
                         {% endfor %}
                     </div>
@@ -217,6 +217,32 @@ classes:
                 <p><a href="https://www.eventbrite.com.au/e/the-research-bazaar-tickets-29662163329" target="_blank" class="btn btn-lg btn-outline light-bkg">
                 <i class="fa fa-users"></i> Register Here</a>
                 </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+
+<!-- Contact Section -->
+<section id="contactSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Got questions?</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center contact-buttons">
+
+                <a href="mailto:datasciencehobart@gmail.com" class="btn btn-lg btn-outline light-bkg">
+                    <i class="fa fa-envelope"></i> Email
+                </a>
+                <a href="https://twitter.com/datasciencehbt" class="btn btn-lg btn-outline light-bkg">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
             </div>
         </div>
     </div>
@@ -290,7 +316,7 @@ classes:
 <script> 
     // var listElements1 = document.getElementsByClassName('list-group-item')
     // console.log(listElements1)
-    var toolList = document.getElementById('tool-list')
+    var toolList = document.getElementById('scheduleSection')
     var listElements = toolList.getElementsByClassName('list-group-item')
     for(var i=0; i<listElements.length; i++){
             listElements[i].children[0].onclick = function(){
