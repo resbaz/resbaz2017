@@ -110,6 +110,18 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='/perth'>Perth</a>"
             }
-        }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[175.614064, -40.385087]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/palmerston-north'>Palmerston North</a>"
+            }
+        },
     ]
 }
