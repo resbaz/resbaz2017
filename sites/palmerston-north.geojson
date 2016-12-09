@@ -1,0 +1,19 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[
+									175.614064,
+									-40.385087
+					]
+            },
+            "properties": {
+                "marker-color": "#cc0011",
+                "details": "University Central Library and Student Centre, Massey University"
+            }
+        }
+    ]
+}

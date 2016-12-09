@@ -1,15 +1,15 @@
 {
     "type": "FeatureCollection",
-    "features": [
+    "features": [    
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[170.513132, -45.863208]
+                "coordinates":[170.520855, -45.868072] 
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "University of Otago campus"
+                "details": "University of Otago College of Education, Tower Block, 155 Union St E"
             }
         }
     ]
