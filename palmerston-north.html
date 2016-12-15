@@ -10,7 +10,13 @@ splashImage: https://farm1.staticflickr.com/681/22032155473_bca28567d4_z.jpg
 
 map: sites/palmerston-north.geojson
 
-about: On the 8 th – 10 th February 2017 Massey University, Manawatu will host its inaugural ResBaz event, under and overarching theme of Research Workflow. The Research Bazaar is a growing international conference promoting the digital literacy emerging at the centre of modern research. An interesting aspect of ResBaz is the emphasis on community and Open Access; they are not institutional specific, but region wide. On the 8th – 10th February 2017, events will be held at a number of university campuses around the globe. The aim of these events is to equip researchers from all career stages with the digital skills and tools required to do their research better, faster and smarter. A unique blend of academic and social life, ResBaz is an event unlike traditional academic conferences. One of the key aspects of ResBaz is the use of training and training packages developed by Software and Data Carpentry. Software Carpentry is a global volunteer organisation that has led the way in researcher-led training. Their lessons on scientific computing (e.g. unix shell, Python, MATLAB, R, git/GitHub) are Open Source and a perfect fit for a ResBaz conference.
+about: | 
+   On the **8th – 10th February 2017** Massey University, Manawatu will host its inaugural 
+   ResBaz event, under and overarching theme of **Research Workflow**. The Research Bazaar is a growing international conference promoting the digital literacy emerging at the centre of modern research. 
+
+   An interesting aspect of ResBaz is the emphasis on community and Open Access; they are not institutional specific, but region wide. On the 8th – 10th February 2017, events will be held at a number of university campuses around the globe. The aim of these events is to equip researchers from all career stages with the digital skills and tools required to do their research better, faster and smarter. 
+
+   A unique blend of academic and social life, ResBaz is an event unlike traditional academic conferences. One of the key aspects of ResBaz is the use of training and training packages developed by Software and Data Carpentry. Software Carpentry is a global volunteer organisation that has led the way in researcher-led training. Their lessons on scientific computing (e.g. unix shell, Python, MATLAB, R, git/GitHub) are Open Source and a perfect fit for a ResBaz conference.
 
 schedule: Draft schedule (all sessions may be subject to change)
 days:
@@ -106,7 +112,7 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-              <p>{{page.about}}</p>
+              <p>{{page.about | markdownify}}</p>
             </div>
         </div>
     </div>
