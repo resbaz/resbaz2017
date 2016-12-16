@@ -58,6 +58,9 @@ sponsors:
     img: perth/ecu.jpg
   - name: The University of Notre Dame
     img: perth/notredame.jpg
+supporters:
+  - name: KZN Group
+    img: perth/kzn.png
 ---
 
 <!-- Navigation -->
@@ -119,15 +122,27 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
+            <p align="justify">
+                 	Are you struggling with manual data entry? Don’t know how to process 
+                 	all your data in a fast and reproducible manner? Had enough of propriety
+                 	 software? Need to know how to typeset you thesis asap? 
+                 	 </br>
+                 	 Then come along to the 2017 Research Bazaar!
+                 	 </p>
                 <p align="justify">
-                    We are pleased to announce the second Perth Research Bazaar, hosted
-                    at Curtin University in the last week of January.
+                </br> 
+                    We are pleased to announce that the second Perth Research Bazaar will 
+                    be hosted at Curtin University in the last week of January.
                 </p>
                 <p align="justify">
-                 	The Perth ResBaz will offer researchers (at any stage) the opportunity
-                 	to build skills and engage in community building.
+                </br>
+                 	The Perth Research Bazaar Baz (or ResBaz for short) will bring together 
+                 	researchers (at any stage) from all 5 WA universities giving them the 
+                 	opportunity to build skills and engage in community building.
                  	We have a full program planned with key stories, programming training,
-                 	including many exciting electives and networking events at our Knowledge Bazaar.
+                 	including many exciting electives and networking events at our 
+                 	Knowledge Bazaar.
+
 			</p>
             </div>
         </div>
@@ -149,7 +164,7 @@ sponsors:
       <div class="col-lg-12">
         <p>
           Places are limited, demand is high and we want to make
-          sure everybody has a fair chance of partecipating in this
+          sure everybody has a fair chance of participating in this
           unique event.
         </p>
         <p>
@@ -165,7 +180,13 @@ sponsors:
           surprised by the various disciplines that use the same tools as you.
         </p>
         <p>
-          We’ll email you the outcome of your application by mid-December.
+          We’ll email you the outcome of your application by mid-December. If
+          you make it in, the registration will be $50 and cover all the
+          classes, refreshments and lunch.
+        </p>
+        <p class="text-center">
+          <br/>
+          <a href="https://goo.gl/forms/CNMdT1ZGWg5MEhkr1" class="btn btn-lg btn-success">Fill in the application form!</a>
         </p>
       </div>
     </div>
@@ -186,11 +207,12 @@ sponsors:
                 <div class="col-lg-12">
                     <p>
                         The event runs around the Knowledge Bazaar, in the
-                        form of a tent on Lower Henderson Court lawn. Workshop
-                        that will require working on laptops will be held in
-                        the nearby building 300.
-                        Launches, coffee breaks and evening sundowners will be
-                        at the tent.
+                        form of a tent on Lower Henderson Court lawn. 
+                        </br>
+                        Workshops that will require working on laptops will be held in
+                        the nearby building 300. </br>
+                        The opening and all morning activities, coffee breaks and evening 
+                        sundowners will be at the tent.
                     </p>
                 </div>
             </div>
@@ -208,15 +230,27 @@ sponsors:
           <div class="row">
             <div class="col-lg-12">
               <dl>
-                <dt>Stream workshops</dt><dd>These are run in parallel and are comprised of multiple classes.
-                  You will be asked to choose your stream upon
-                  registration.</dd>
-                <dt>Elective classes</dt><dd>These are independent classes (workshops, demos or group discussions).
+ <dt>Stream workshops</dt><dd>These are run in parallel and are comprised of multiple classes.
+                  You will able to choose your stream upon
+                  registration. The streams are:
+		      <ul>
+			      <li>Software Carpentry (Python)</li>
+			      <li>Software Carpentry (R)</li>
+			      <li>Data Carpentry</li>
+		      </ul>
+		      Software Carpentry teaches introductory research computing skills, including programming in either Python or R.
+		      Data Carpentry teaches specific tools to work with data. If you're not sure what to choose, we recommend one of
+		      the Software Carpentry streams.</dd> </br>
+              <dt>Elective classes</dt><dd>These are independent classes (workshops, demos or group discussions).
                   You will decide on the day what elective classes to
                   attend, look out for what's on offers on the board in
-                  the morning.</dd>
-                <dt>Social activities and networking events</dt><dd>Community engagement is at the core of Research Bazaar!
-                  Make sure you come along to as many as possible to build a continuing support network for life after ResBaz.
+                  the morning. We are still finalising these classes but you can look forward
+                  to topics including (but not limited to!) machine learning, R Shiny, 
+                  data science and communicating you research.</dd> </br>
+                <dt>Social activities and networking events</dt><dd>Community engagement 
+                is at the core of Research Bazaar!
+                  Make sure you come along to as many as possible to build a continuing 
+                  support network for life after ResBaz.  
                 </dd>
               </dl>
             </div>
@@ -284,6 +318,31 @@ sponsors:
                   </div>
               {% endfor %}
           </div>
+      </div>
+  </div>
+</section>
+
+<hr class='divider'></hr -->
+
+<section id="sponsors"
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Our Supporters</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>Our supporters are contributing valuable human
+                  resources to the organisation of the event. Many thanks to them too.</p>
+              {% for supporter in page.supporters %}
+                  <div class='sponsor-tile'>
+                      <img src={{site.baseurl}}/img/sponsors/{{ supporter.img }}></img>
+                      <h4>{{ supporter.name }}</h4>
+                  </div>
+              {% endfor %}
+          </div>
         </div>
     </div>
 </section>
@@ -301,5 +360,4 @@ sponsors:
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
             }
         }
-
 </script>

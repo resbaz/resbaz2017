@@ -18,7 +18,7 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[147.326672, -42.903543]
+                "coordinates":[147.335652, -42.886183]
             },
             "properties": {
                 "marker-color": "#2b3990",
@@ -109,6 +109,18 @@
             "properties": {
                 "marker-color": "#2b3990",
                 "details": "<a href='/perth'>Perth</a>"
+            }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[175.614064, -40.385087]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/palmerston-north'>Palmerston North</a>"
             }
         }
     ]

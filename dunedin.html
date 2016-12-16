@@ -6,33 +6,70 @@ location: Dunedin
 
 dates: 8 February - 10 February, 2017
 
-splashImage: img/dunedin.jpg
+splashImage: /img/dunedin.jpg
 
 map: sites/dunedin.geojson
 
+about: The Research Bazaar is a (free-of-charge) 3-day intensive conference where researchers come together to up-skill in ‘next generation digital research tools and skills’.  In the spirit of a marketplace or bazaar, ResBaz is a highly participatory event where researchers from many different disciplines can learn, share knowledge and skills, and have fun!<br><br> Who should attend? Researchers at ALL levels from ALL disciplines. PhD and research Masters students are especially encouraged to apply. Research technologists who support researchers to do their job should also come along!<br><br>We are still working on the programme to bring you a broad range of digital research skills topics - below are some of the sessions that will be on offer. <br><br> <b>Update 13/12/2016 - We're full! Please email <a href="mailto:res.baz@otago.ac.nz?Subject=ResBaz%20Dunedin%20wait%20list%20request">res.baz@otago.ac.nz</a> to be added to the wait list.</b><br><br>
 
-about: Research Bazaar 2017 in Dunedin!
+classes:
+ - class: Main Streams - Software Carpentry
+   descriptions:
+    - name: The Unix Shell
+      id: shell
+      blurb: Use of the shell is fundamental to using a wide range of other powerful tools and computing resources (including “high-performance computing” supercomputers). These lessons will start you on a path towards using these resources effectively.
+    - name: R
+      id: rprog
+      blurb: The R language provides a flexible and powerful environment for data analysis and visualisation.  This workshop will introduce the R language and will teach you some key programming skills.
+    - name: Git
+      id: git
+      blurb: Version control is the lab notebook of the digital world - it’s what professionals use to keep track of what they’ve done and to collaborate with other people. Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on.
+ - class: Additional Sessions
+   descriptions:
+    - name: ggplot2 for data visualisation
+      id: ggplot
+      blurb: The popular ggplot2 package for R provides a powerful means to create compelling data visualisations.  Come along and learn how to use ggplot2 to make your data look even more beautiful.
+    - name: Reproducible research - concepts and practise
+      id: reprod
+      blurb: Reproducibility is a key component of  science, and one that is becoming even more critical as we analyse ever-growing amounts of data using increasingly complex tools.  Come along to learn about the key concepts of reproducible research, and gain some experience with tools that will help you put these ideas into practise.
+    - name: Interactive data analysis and visualisation with R and shiny server
+      id: shiny
+      blurb: Want to turn your ground-breaking R analyses into web-based tools for your friends and collaborators?  The "shiny" package for R provides a simple mechanism for building sophisticated web interfaces for interactive data analysis and visualisation - come along and learn how it's done.
+    - name: Advice for early career researchers
+      id: early
+      blurb: Want to get your research career off to a flying start? Come along and learn from the pros.
+    - name: Advanced R programming
+      id: advr
+      blurb: Can't get enough of R?  This focused workshop will help turn your commands into scripts, your scripts into functions, and your functions into packages - what more could you want?
 
-schedule: Schedule to be announced
+schedule: Each day at ResBaz will be split into morning and afternoon events. Following a Key Story from one of our exciting speakers, the mornings will consist of introductory <a href='https://software-carpentry.org/'>Software Carpentry</a> lessons, alongside intermediate and advanced topics for those who are already familar with the introductory material. Afternoon sessions will begin with a second Key Story, followed by a more informal collection of activities, including focussed workshops, dicussion sessions, and lightning research presentations.  At the end of each afternoon we will reconvence for a discusion session, to help set the scene for an evening of fun social and networking activities. <br><br>A more detailed timetable will be displayed once more sessions are confirmed.<br><br>
+
 days:
  - day: Wednesday, 8th February 
    sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+    - title: Welcome and Key Story 1
+    - title: Unix Shell (Software Carpentry) + Intermediate R
+    - title: LUNCH
+    - title: Key Story 2
+    - title: Mini-workshops and informal discussions
+    - title: Discussion session
+    - title: Evening social event
  - day: Thursday, 9th February
    sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+    - title: Key Story 3
+    - title: R (Software Carpentry) + Advanced R
+    - title: LUNCH
+    - title: Key Story 4
+    - title: Mini-workshops and informal discussions
+    - title: Discussion session
+    - title: Dinner
  - day: Friday, 10th February
    sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+    - title: Key Story 5
+    - title: Version Control with Git (Software Carpentry) + Reproducible Research
+    - title: LUNCH
+    - title: Key Story 6
+
 speakers:
  - name:
    img: img/placehold.jpg
@@ -43,13 +80,11 @@ speakers:
  - name: TBC
    img: img/speakerTBC.jpg
    blurb: Our KeyStory speakers are still to be confirmed - watch this space!
+
 sponsors:
- - name: 'Sponsor Number One'
+ - name: 'Sponsors'
    img: fake-sponsor.png
- - name: 'Sponsor Number Two'
-   img: fake-sponsor.png
- - name: 'Sponsor Number Three'
-   img: fake-sponsor.png
+
 ---
 
 <!-- Navigation -->
@@ -61,8 +96,8 @@ sponsors:
                 <img class='nav-logo' src='https://raw.githubusercontent.com/resbaz/resbaz2017/gh-pages/img/resbaz_logos/ResBaz_transparent_cropped.png'></img>
             </a>
         </div>
-        <div class='col-md-4'>
-            <ul class="nav navbar-nav navbar-right nav-list">
+        <div class='col-md-5'>
+             <ul class="nav navbar-nav navbar-right nav-list">
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
@@ -70,6 +105,9 @@ sponsors:
                     <a href="#aboutSection">About</a>
                 </li>
                 <li class="page-scroll">
+                    <a href="#menuSection">Sessions</a>
+                </li>
+		<li class="page-scroll">
                     <a href="#scheduleSection">Schedule</a>
                 </li>
                 <li class="page-scroll">
@@ -120,6 +158,32 @@ sponsors:
 
 <hr class='divider'></hr>
 
+<!-- Menu -->
+<section id='menuSection'>
+  <div class = 'container'>
+    <div class = "row">
+      <div class = "col-lg-12 text-center">
+	<h1> Workshop sessions </h1>
+	<hr class = "star-primary">
+      </div>
+    <div class="row">
+      {% for d in page.classes %}
+      <div class = "col-md-6 text-center">
+        <div class = 'list-group'>
+	  {% for description in d.descriptions %}
+	  <div class = 'list-group-item text-center'>
+	    <a class='menuItem' id = {{ description.id }} >{{ description.name }}</a><br>
+	    <p class = 'small hidden' id = {{ description.id}}Blurb > {{ description.blurb }} </p>
+	  </div>
+	  {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>    
+  </div>
+</section>
+
+
 <!-- Schedule -->
 <section id='scheduleSection'>
     <div class='container'>
@@ -157,6 +221,10 @@ sponsors:
                     <h1>Venue</h1>
                     <hr class="star-primary">
                 </div>
+		<div class="col-lg-12 text-center">
+                  University of Otago College of Education<BR>
+		  Tower Block, 155 Union St<BR><BR> 
+                </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <script src="https://embed.github.com/view/geojson/resbaz/resbaz2017/gh-pages/{{page.map}}"></script>
             </div>
@@ -171,15 +239,36 @@ sponsors:
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Come along</h1>
+                <h1>We're Full!</h1>
                 <hr class="star-primary">
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <p>Your registration text.</p>
-            </div>
-        </div>
+	<div class="row">
+          <div class="col-lg-12 text-center">
+	    <p>Please email <a href="mailto:res.baz@otago.ac.nz?Subject=ResBaz%20Dunedin%20wait%20list%20request">res.baz@otago.ac.nz</a> to be added to the wait list.</p>
+<!--
+	      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyx4_QlK7jYi8_lW4T5yW2fnuEkamio3Q6RmT6Nqj7-G0xNg/viewform" target="_blank" class="btn btn-lg btn-outline light-bkg">
+		<i class="fa fa-users"></i> Register
+	      </a>
+-->
+	  </div>
+<!--
+	<div class="row">
+	  <div class="col-lg-4 col-lg-offset-2">
+	    <p>Register here for the {{page.location}} Research Bazaar.</p>
+	  </div>
+	  <div class="col-lg-4">
+	    <p>The registration process starts with a Pre-Assessment Survey, so that we can create the best possible experience for you. Use the promo code given to you at the end of the survey to complete the registration form.</p>
+	  </div>
+	  <div class="col-lg-8 col-lg-offset-2 text-center">
+	    <div class="col-lg-8 col-lg-offset-2 text-center">
+	      <a href="https://docs.google.com/forms/d/1io9-YyETAl9sQ_NkIjehq4juemgnlaXilG17USHvjug/edit" target = "_blank" class="btn btn-lg btn-outline light-bkg">
+		<i class="fa fa-pencil"></i> Pre-Assessment Survey
+	      </a>
+	    </div>
+	  </div>
+-->
+	</div>
     </div>
 </section>
 
@@ -232,17 +321,17 @@ sponsors:
 
 
 <!-- TEST SCRIPT -->
-<script> 
-    // var listElements1 = document.getElementsByClassName('list-group-item')
-    // console.log(listElements1)
-    var toolList = document.getElementById('tool-list')
-    var listElements = toolList.getElementsByClassName('list-group-item')
-    for(var i=0; i<listElements.length; i++){
-            listElements[i].children[0].onclick = function(){
-                 // toolList.getElementsByClassName('hidden').hide();
-                 var idOfBlurb = this.id + 'Blurb';
-                 document.getElementById(idOfBlurb).classList.toggle('hidden');
-            }
-        }
-
+<script>
+  // var listElements1 = document.getElementsByClassName('list-group-item')
+  // console.log(listElements1)
+  var toolList = document.getElementById('menuSection')
+  var listElements = toolList.getElementsByClassName('list-group-item')
+  for(var i=0; i<listElements.length; i++){
+	  listElements[i].children[0].onclick = function(){
+	       // toolList.getElementsByClassName('hidden').hide();
+	       var idOfBlurb = this.id + 'Blurb';
+	       document.getElementById(idOfBlurb).classList.toggle('hidden');
+	  }
+	}
 </script>
+

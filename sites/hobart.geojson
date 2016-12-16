@@ -5,11 +5,11 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[147.326672, -42.903543]
+                "coordinates":[147.335652, -42.886183]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "UTAS Sandy Bay"
+                "details": "IMAS"
             }
         }
     ]
