@@ -1,0 +1,16 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.0102536,-2.9008206]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "Universidad de Cuenca"
+            }
+        }
+    ]
+}
