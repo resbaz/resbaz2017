@@ -6,6 +6,66 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
+                "coordinates":[174.768969,-36.853137]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/auckland'>Auckland</a>"
+            }
+        },
+        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[153.028357,-27.477418]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/brisbane'>Brisbane</a>"
+            }
+        },
+        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[172.58246898651123, -43.52363591729539]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/christchurch'>Christchurch</a>"
+            }
+        },
+        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[170.513132,-45.863208]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/dunedin'>Dunedin</a>"
+            }
+        },
+        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[147.335652, -42.886183]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/hobart'>Hobart</a>"
+            }
+        },
+        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
                 "coordinates":[144.96289,-37.79901]
             },
             "properties": {
@@ -18,67 +78,6 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[147.335652, -42.886183]
-            },
-            "properties": {
-                "marker-color": "#2b3990",
-                "details": "<a href='/hobart'>Hobart</a>"
-            }
-        },
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates":[153.028357,-27.477418]
-            },
-            "properties": {
-                "marker-color": "#2b3990",
-                "details": "<a href='/brisbane'>Brisbane</a>"
-            }
-        },
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates":[174.768969,-36.853137]
-            },
-            "properties": {
-                "marker-color": "#2b3990",
-                "details": "<a href='/auckland'>Auckland</a>"
-            }
-        },
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates":[172.58246898651123, -43.52363591729539]
-            },
-            "properties": {
-                "marker-color": "#2b3990",
-                "details": "<a href='/christchurch'>Christchurch</a>"
-            }
-        },
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates":[170.513132,-45.863208]
-            },
-            "properties": {
-                "marker-color": "#2b3990",
-                "details": "<a href='/dunedin'>Dunedin</a>"
-            }
-        },
-
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
                 "coordinates":[10.723284, 59.939673]
             },
             "properties": {
@@ -86,20 +85,19 @@
                 "details": "<a href='/oslo'>Oslo</a>"
             }
         },
-
+        
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[174.768336,-41.289328]
+                "coordinates":[175.614064, -40.385087]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/wellington'>Wellington</a>"
+                "details": "<a href='/palmerston-north'>Palmerston North</a>"
             }
         },
-
-
+        
         {
             "type": "Feature",
             "geometry": {
@@ -128,11 +126,11 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[175.614064, -40.385087]
+                "coordinates":[174.768336,-41.289328]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/palmerston-north'>Palmerston North</a>"
+                "details": "<a href='/wellington'>Wellington</a>"
             }
         }
     ]
