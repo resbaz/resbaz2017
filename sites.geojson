@@ -116,6 +116,18 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
+                "coordinates":[-123.112054, 49.284690]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='http://www.lib.sfu.ca/about/branches-depts/rc/networking/research-bazaar'>Vancouver</a>"
+            }
+        },
+        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
                 "coordinates":[175.614064, -40.385087]
             },
             "properties": {
