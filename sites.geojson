@@ -42,6 +42,18 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
+                "coordinates":[-79.0102536,-2.9008206]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/cuenca-es'>Cuenca</a>"
+            }
+        },
+        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
                 "coordinates":[170.513132,-45.863208]
             },
             "properties": {
@@ -131,18 +143,6 @@
             "properties": {
                 "marker-color": "#2b3990",
                 "details": "<a href='/wellington'>Wellington</a>"
-            }
-        },
-
-       	{
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates":[-79.0102536,-2.9008206]
-            },
-            "properties": {
-                "marker-color": "#2b3990",
-                "details": "<a href='/cuenca'>Cuenca</a>"
             }
         }
  
