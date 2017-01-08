@@ -132,6 +132,19 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='/wellington'>Wellington</a>"
             }
+        },
+
+       	{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[-79.0102536,-2.9008206]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/cuenca'>Cuenca</a>"
+            }
         }
+ 
     ]
 }
