@@ -18,15 +18,15 @@ about: |
 
    A unique blend of academic and social life, ResBaz is an event unlike traditional academic conferences. One of the key aspects of ResBaz is the use of training and training packages developed by Software and Data Carpentry. Software Carpentry is a global volunteer organisation that has led the way in researcher-led training. Their lessons on scientific computing (e.g. unix shell, Python, MATLAB, R, git/GitHub) are Open Source and a perfect fit for a ResBaz conference.
 
-schedule: Draft schedule (all sessions may be subject to change)
+schedule: What we are planning to do!
 days:
  - day: Wednesday, 8 February
    sessions:
     - title: 9.00 Coffee & registration
     - title: 9.30 Welcome
-    - title: 10.00 Unix Shell (Software Carpentry session)
+    - title: 10.00 [Unix Shell](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
     - title: 11.00 Morning tea
-    - title: 11.30 Unix Shell (Software Carpentry session) - cont.
+    - title: 11.30 [Unix Shell](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
     - title: 12.30 Lunch and unconference planning
     - title: 13.30 Urban Rogaine
     - title: 3.00  Afternoon tea
@@ -36,9 +36,9 @@ days:
    sessions:
     - title: 8.30 Coffee & registration
     - title: 9.00 Key story talk
-    - title: 9.30 Programming with Python (Software Carpentry)
+    - title: 9.30 [Programming with Python](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
     - title: 10.30 Morning tea
-    - title: 11.00 Programming with Python (Software Carpentry) - cont.
+    - title: 11.00 [Programming with Python](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
     - title: 12.30 Lunch and Research services - info booths
     - title: 1.30 Unconference B - you suggest the topic!
     - title: 3.00  Afternoon tea
@@ -48,9 +48,9 @@ days:
    sessions:
     - title: 8.30 Coffee & registration
     - title: 9.00 Key story talk
-    - title: 9.30 Version control with Git (Software Carpentry)
+    - title: 9.30 [Version control with Git](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
     - title: 10.30 Morning tea
-    - title: 11.00 Version control with Git (Software Carpentry) - cont.
+    - title: 11.00 [Version control with Git](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
     - title: 12.30 Lunch and Research services - info booths
     - title: 1.30 Unconference C - you suggest the topic!
     - title: 3.00  Afternoon tea
@@ -150,7 +150,7 @@ sponsors:
             </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-              <p>{{page.schedule}}</br></br></p>
+              <p>{{page.schedule | markdownify}}</br></br></p>
             </div>
         </div>
             {% for d in page.days %}
@@ -158,7 +158,7 @@ sponsors:
                         <h4>{{ d.day }}</h4>
                         <div class='list-group'>
                         {% for session in d.sessions %}
-                                <a class='list-group-item'>{{ session.title }}</a>
+                                <div class='list-group-item'>{{ session.title  | markdownify}}</div>
                         {% endfor %}
                         </div>
                 </div>
