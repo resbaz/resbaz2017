@@ -476,9 +476,9 @@ footer .footer-below {
 }
 
 .speaker-tile {
-    border: 5px solid;
-    border-color: #FFFFFF;
-    padding: 2em;
+    border: 1px solid;
+    border-color: #dbedff;
+    padding: 2.5em;
     max-height: 450px;
     overflow: auto;
 }
@@ -551,3 +551,5 @@ ul.nav-list li a:hover{
 .menuItem{
     cursor: pointer;
 }
+
+
