@@ -18,15 +18,15 @@ about: |
 
    A unique blend of academic and social life, ResBaz is an event unlike traditional academic conferences. One of the key aspects of ResBaz is the use of training and training packages developed by Software and Data Carpentry. Software Carpentry is a global volunteer organisation that has led the way in researcher-led training. Their lessons on scientific computing (e.g. unix shell, Python, MATLAB, R, git/GitHub) are Open Source and a perfect fit for a ResBaz conference.
 
-schedule: Draft schedule (all sessions may be subject to change)
+schedule: What we are planning to do!
 days:
  - day: Wednesday, 8 February
    sessions:
     - title: 9.00 Coffee & registration
     - title: 9.30 Welcome
-    - title: 10.00 Unix Shell (Software Carpentry session)
+    - title: 10.00 [Unix Shell](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
     - title: 11.00 Morning tea
-    - title: 11.30 Unix Shell (Software Carpentry session) - cont.
+    - title: 11.30 [Unix Shell](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
     - title: 12.30 Lunch and unconference planning
     - title: 13.30 Urban Rogaine
     - title: 3.00  Afternoon tea
@@ -36,9 +36,9 @@ days:
    sessions:
     - title: 8.30 Coffee & registration
     - title: 9.00 Key story talk
-    - title: 9.30 Programming with Python (Software Carpentry)
+    - title: 9.30 [Programming with Python](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
     - title: 10.30 Morning tea
-    - title: 11.00 Programming with Python (Software Carpentry) - cont.
+    - title: 11.00 [Programming with Python](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
     - title: 12.30 Lunch and Research services - info booths
     - title: 1.30 Unconference B - you suggest the topic!
     - title: 3.00  Afternoon tea
@@ -48,14 +48,20 @@ days:
    sessions:
     - title: 8.30 Coffee & registration
     - title: 9.00 Key story talk
-    - title: 9.30 Version control with Git (Software Carpentry)
+    - title: 9.30 [Version control with Git](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
     - title: 10.30 Morning tea
-    - title: 11.00 Version control with Git (Software Carpentry) - cont.
+    - title: 11.00 [Version control with Git](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
     - title: 12.30 Lunch and Research services - info booths
     - title: 1.30 Unconference C - you suggest the topic!
     - title: 3.00  Afternoon tea
     - title: 3.30 Unconference D - you suggest the topic!
     - title: 5.30 Wrap up
+unconference: |
+   The unconference sessions are an opportunity for you to discuss and learn more about any topic
+   related to research workflow that interests you. Maybe you would like to know more about data visualisation or maybe
+   about High Performance Computing. Maybe you want to understand better how other researchers use computational tools for their work or
+   maybe how they use social media. In the registration form you will be able to put in any topics you would like to be covered.
+   Bear in mind that we have approximately hour and a half for each unconference session so suggest a topic that can fit into that timeframe.
 speakers:
  - name:
    img: img/placehold.jpg
@@ -91,6 +97,9 @@ sponsors:
                 </li>
                 <li class="page-scroll">
                     <a href="#scheduleSection">Schedule</a>
+                </li>
+		 <li class="page-scroll">
+                    <a href="#unconferenceSection">Unconference sessions</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#registerSection">Register</a>
@@ -150,7 +159,7 @@ sponsors:
             </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-              <p>{{page.schedule}}</br></br></p>
+              <p>{{page.schedule | markdownify}}</br></br></p>
             </div>
         </div>
             {% for d in page.days %}
@@ -158,7 +167,7 @@ sponsors:
                         <h4>{{ d.day }}</h4>
                         <div class='list-group'>
                         {% for session in d.sessions %}
-                                <a class='list-group-item'>{{ session.title }}</a>
+                                <div class='list-group-item'>{{ session.title  | markdownify}}</div>
                         {% endfor %}
                         </div>
                 </div>
@@ -168,6 +177,26 @@ sponsors:
 </section>
 
 <hr class='divider'></hr>
+
+<!-- Unconference -->
+<section id='unconferenceSection'>
+    <div class = 'container' id = 'tool-list'>
+        <div class = "row">
+            <div class = "col-lg-12 text-center">
+                <h1>Unconference sessions</h1>
+                <hr class = "star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.unconference | markdownify}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
 
 <!-- Map -->
 <section id="mapSection">
