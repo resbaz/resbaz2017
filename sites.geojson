@@ -144,7 +144,19 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='/wellington'>Wellington</a>"
             }
-        }
+        },
+
+{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates”:[32.2319,110.9501]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href=‘/tucson’>Tucson</a>"
+            }
+        },
  
     ]
 }
