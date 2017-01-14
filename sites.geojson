@@ -126,6 +126,18 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
+                "coordinates":[32.231913,-110.952187]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/tucson'>Tucson</a>"
+            }
+        },
+        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
                 "coordinates":[-123.112054, 49.284690]
             },
             "properties": {
@@ -144,18 +156,6 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='/wellington'>Wellington</a>"
             }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates":[32.231913,-110.952187]
-            },
-            "properties": {
-                "marker-color": "#2b3990",
-                "details": "<a href='/tucson'>Tucson</a>"
-            }
-        },
- 
+        }
     ]
 }
