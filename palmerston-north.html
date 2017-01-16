@@ -26,11 +26,12 @@ days:
    sessions:
     - title: 9.00 Coffee & registration
     - title: 9.30 Welcome
-    - title: 10.00 [Unix Shell](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
+    - title: 10.00 Key story talk
     - title: 11.00 Morning tea
-    - title: 11.30 [Unix Shell](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
+    - title: 11.30 [Unix Shell](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
     - title: 12.30 Lunch and unconference planning
-    - title: 13.30 Urban Rogaine
+    - title: 1.30 [Unix Shell](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
+    - title: 2.30 Urban Rogaine
     - title: 3.00  Afternoon tea
     - title: 3.30 Unconference A - you suggest the topic!
     - title: 4.30 Wrap up
@@ -38,11 +39,11 @@ days:
    sessions:
     - title: 8.30 Coffee & registration
     - title: 9.00 Key story talk
-    - title: 9.30 [Programming with Python](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
-    - title: 10.30 Morning tea
-    - title: 11.00 [Programming with Python](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
+    - title: 10.00 Morning tea
+    - title: 10.30 [Programming with Python](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
     - title: 12.30 Lunch and Research services - info booths
-    - title: 1.30 Unconference B - you suggest the topic!
+    - title: 1.30 [Programming with Python](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
+    - title: 2.30 Unconference B - you suggest the topic!
     - title: 3.00  Afternoon tea
     - title: 3.30 PhD Movie and popcorn!
     - title: 5.30 Wrap up
@@ -50,20 +51,31 @@ days:
    sessions:
     - title: 8.30 Coffee & registration
     - title: 9.00 Key story talk
-    - title: 9.30 [Version control with Git](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
-    - title: 10.30 Morning tea
-    - title: 11.00 [Version control with Git](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
+    - title: 10.00 Morning tea
+    - title: 10.30 [Version control with Git](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session)
     - title: 12.30 Lunch and Research services - info booths
-    - title: 1.30 Unconference C - you suggest the topic!
+    - title: 1.30 [Version control with Git](https://apawlik.github.io/resbaz2017-pn/) (Software Carpentry session) - cont.
     - title: 3.00  Afternoon tea
     - title: 3.30 Unconference D - you suggest the topic!
     - title: 5.30 Wrap up
+
 unconference: |
    The unconference sessions are an opportunity for you to discuss and learn more about any topic
    related to research workflow that interests you. Maybe you would like to know more about data visualisation or maybe
    about High Performance Computing. Maybe you want to understand better how other researchers use computational tools for their work or
-   maybe how they use social media. In the registration form you will be able to put in any topics you would like to be covered.
-   Bear in mind that we have approximately hour and a half for each unconference session so suggest a topic that can fit into that timeframe.
+   maybe how they use social media. In the registration form you will be able to put in any topics you would like to be covered. Bear in    mind that we have approximately hour and a half for each unconference session so suggest a topic that can fit into that timeframe.
+
+   Some topics for the possible unconference sessions are listed below:
+
+unconferences:  
+  - title: LaTeX
+  - title: Overleaf
+  - title: Research Data Management
+  - title: Open Access and Creative Commons Licensing
+  - title: HPC at Massey University
+  - title: NVivo
+  - title: Qiime
+
 speakers:
  - name:
    img: img/placehold.jpg
@@ -191,7 +203,13 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-              <p>{{page.unconference | markdownify}}</p>
+          <p>{{page.unconference | markdownify}}</p>
+               <div class='list-group'>
+                        {% for session in page.unconferences %}
+                                <div class='list-group-item'>{{ session.title  | markdownify}}</div>
+                        {% endfor %}
+               </div>
+        
             </div>
         </div>
     </div>
@@ -228,7 +246,10 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <p>Please <a href="https://www.eventbrite.co.nz/e/massey-university-palmerston-north-research-bazaar-2017-tickets-30345901408">register here</a></p>
+              <p>Please <a href="https://www.eventbrite.co.nz/e/massey-university-palmerston-north-research-bazaar-2017-tickets-30345901408">register for the main Research Bazaar here</a>.</p>
+	      <p>If you want to attend the Software Carpentry workshop sessions, you <b>must</b>
+		<a href="https://www.eventbrite.co.nz/e/resbaz-2017massey-palmerston-north-and-nesi-software-carpentry-workshop-tickets-31111637746">
+		  register for these sessions</a> too (it is a separate registation).</p>
             </div>
         </div>
     </div>
