@@ -10,7 +10,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/auckland'>Auckland</a>"
+                "details": "<a href='https://2017.resbaz.com/auckland'>Auckland</a>"
             }
         },
         
@@ -22,7 +22,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/brisbane'>Brisbane</a>"
+                "details": "<a href='https://2017.resbaz.com/brisbane'>Brisbane</a>"
             }
         },
         
@@ -34,7 +34,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/christchurch'>Christchurch</a>"
+                "details": "<a href='https://2017.resbaz.com/christchurch'>Christchurch</a>"
             }
         },
         
@@ -46,7 +46,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/cuenca-es'>Cuenca</a>"
+                "details": "<a href='https://2017.resbaz.com/cuenca-es'>Cuenca</a>"
             }
         },
         
@@ -58,7 +58,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/dunedin'>Dunedin</a>"
+                "details": "<a href='https://2017.resbaz.com/dunedin'>Dunedin</a>"
             }
         },
         
@@ -70,7 +70,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/hobart'>Hobart</a>"
+                "details": "<a href='https://2017.resbaz.com/hobart'>Hobart</a>"
             }
         },
         
@@ -94,7 +94,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/oslo'>Oslo</a>"
+                "details": "<a href='https://2017.resbaz.com/oslo'>Oslo</a>"
             }
         },
         
@@ -106,7 +106,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/palmerston-north'>Palmerston North</a>"
+                "details": "<a href='https://2017.resbaz.com/palmerston-north'>Palmerston North</a>"
             }
         },
         
@@ -118,7 +118,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/perth'>Perth</a>"
+                "details": "<a href='https://2017.resbaz.com/perth'>Perth</a>"
             }
         },
 
@@ -130,7 +130,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/tucson'>Tucson</a>"
+                "details": "<a href='https://2017.resbaz.com/tucson'>Tucson</a>"
             }
         },
         
@@ -154,7 +154,7 @@
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "<a href='/wellington'>Wellington</a>"
+                "details": "<a href='https://2017.resbaz.com/wellington'>Wellington</a>"
             }
         }
     ]
