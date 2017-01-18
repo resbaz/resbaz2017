@@ -6,7 +6,7 @@ location: Cuenca
 
 dates: Enero 26 - 28, 2017
 
-splashImage: https://farm1.staticflickr.com/681/22032155473_bca28567d4_z.jpg
+splashImage: img/cuenca.jpg
 
 map: sites/cuenca.geojson
 
@@ -56,6 +56,10 @@ speakers:
    img: img/cue/krodriguez.png
    blurb: Coordinadora de Logistica ResBaz por Parte de EREN. Karla trabaja en temas de investigación rural.
    linkedin: "https://au.linkedin.com/in/karlarodriguezec/en"
+ - name: David Amores
+   img: img/cue/damores2.jpg
+   blurb: Interesado en el análisis de datos, machine learning, el desarrollo de aplicaciones web y análisis de redes sociales usando Python.
+   linkedin: "https://www.linkedin.com/in/david-amores-4a971384"
 
 sponsors:
  - name: 'Universidad de Cuenca'
@@ -207,9 +211,10 @@ sponsors:
                 <h1>Conoce a los Facilitadores</h1>
                 <hr class="star-primary">
                 {% for speaker in page.speakers %}
-                    <div class='col-md-3 speaker-tile'>
+                    <div class='col-md-4 speaker-tile'>
 			<a href={{ speaker.linkedin }}>
-                            <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>                        <h4>{{ speaker.name }}</h4>
+                            <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>                        
+			    <h4>{{ speaker.name }}</h4>
 			</a>
                             <p>{{ speaker.blurb }}</p>
                     </div>
