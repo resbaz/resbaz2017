@@ -46,7 +46,7 @@ speakers:
    linkedin: "https://ec.linkedin.com/in/iasanchez" 
  - name: Cristian Montero
    img: img/cue/cmontero.jpg
-   blurb: Es el Coordinador de Servicios Informaticos de la Universidad de Cuenca. Es el instructor de Mendeley y de LaTeX.
+   blurb: Coordinador de Servicios Informaticos de la Universidad de Cuenca. Es el instructor de Mendeley y de LaTeX.
    linkedin: "http://ec.linkedin.com/in/cristian-montero-b4739338/en"
  - name: Marlene Robles
    img: img/cue/mrobles2.jpg
@@ -208,9 +208,10 @@ sponsors:
                 <hr class="star-primary">
                 {% for speaker in page.speakers %}
                     <div class='col-md-3 speaker-tile'>
-                        <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>
-                        <h4>{{ speaker.name }}</h4>
-                        <p>{{ speaker.blurb }}</p>
+			<a href={{ speaker.linkedin }}>
+                            <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>                        <h4>{{ speaker.name }}</h4>
+			</a>
+                            <p>{{ speaker.blurb }}</p>
                     </div>
                 {% endfor %}
             </div>
