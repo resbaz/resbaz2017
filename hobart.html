@@ -68,6 +68,9 @@ classes:
     - name: Installing and navigating the scientific R stack
       id: scir
       blurb: This session will give an overview of the major R libraries used for data science. Participants will learn how to manage and install these libraries.
+    - name: Oceanographic data analysis using Ferret
+      id: Ferret
+      blurb: This session will give an introduction to Ferret, which is a data analysis and visualisation environment used extensively in the oceanography community.  
  - class: grouptwo
    descriptions:
     - name: Data science consultations
@@ -177,15 +180,14 @@ classes:
                     Participants can elect to participate in either the 
                     <a href="https://datasciencehobart.github.io/2017-01-31-resbaztas-python/" target="_blank">Python stream</a>
                     or <a href="https://datasciencehobart.github.io/2017-01-31-resbaztas-r/" target="_blank">R stream</a>. 
-                    Click the links for more details.</p>
+                    Click the links for more details, including the schedule for each day.</p>
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3>Day 3: Community Day</h3>
                     <p>On the final day of the event, data service providers and individual researchers from the local
-                    community will deliver a wide variety of talks and workshops. Below is a list of confirmed classes
-                    (click the titles for a short description). If you'd be interested in presenting at Community Day, please <a href="#contactSection">get in touch</a>. 
-                    We will progressively update the class list (and provide a more detailed timetable) as more volunteer presenters come forward.</p>
+                    community will deliver a wide variety of talks and workshops. Click the links below to view a description of each of the Community Day classes.</p>
+                <br/>
                 </div>
             {% for d in page.classes %}
                 <div class = "col-md-6 text-center">
@@ -199,6 +201,10 @@ classes:
                     </div>
                 </div>
             {% endfor %}
+                <div class="col-lg-12 text-center">
+                    <h4>Community Day schedule</h4>
+                    <p><iframe width="100%" height="600" src="https://docs.google.com/spreadsheets/d/1p7FuVNCU7aLXoq4qgtKKXE2m4U3hBzcxs7RADXepk_w/pubhtml?widget=true&amp;headers=false"></iframe></p>
+                </div>
         </div>
     </div>
 </section -->
@@ -279,50 +285,32 @@ classes:
 
 <hr class='divider'></hr>
 
-<!-- Speakers -->
-<!-- section id='speakerSection'>
-    <div class='container'>
+
+
+<!-- Sponsors -->
+<section id='sponsors'>
+    <div class = 'container'>
+        <div class = "row">
+            <div class = "col-lg-12 text-center">
+                <h2>Our sponsors</h2>
+                <hr class = "star-primary">
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Meet Our Speakers</h1>
-                <hr class="star-primary">
-                {% for speaker in page.speakers %}
-                    <div class='col-md-3 speaker-tile'>
-                        <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>
-                        <h4>{{ speaker.name }}</h4>
-                        <p>{{ speaker.blurb }}</p>
-                    </div>
-                {% endfor %}
+              <p>A big thanks to the following sponsors, who have kindly covered the costs of the food for the event:<br/>
+              <strong>Institute for Marine and Antarctic Studies<br/>
+              UTAS School of Physical Sciences<br/>
+              Integrated Marine Observing System<br/>
+              CSIRO Oceans and Atmosphere<br/>
+              Antarctic Climate and Ecosystems CRC<br/>
+              Rod Jager Consulting</strong><br/>
+              </p>
             </div>
-
         </div>
     </div>
 </section>
 
-<hr class='divider'></hr -->
-
-<!-- Sponsors -->
-<!-- section id="sponsors">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Our Sponsors</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-              <p>Many thanks to our sponsors for helping to bring the Research Bazaar to {{page.location}}.</p>
-              {% for sponsor in page.sponsors %}
-                  <div class='sponsor-tile'>
-                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
-                      <h4>{{ sponsor.name }}</h4>
-                  </div>
-              {% endfor %}
-          </div>
-        </div>
-    </div>
-</section -->
 
 <!-- TEST SCRIPT -->
 <script> 
