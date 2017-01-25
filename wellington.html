@@ -1,5 +1,6 @@
 ---
 layout: site
+
 permalink: wellington
 
 location: Wellington
@@ -10,13 +11,96 @@ splashImage: /img/wellington.jpg
 
 map: sites/wellington.geojson
 
+---
 
-about: Following our successful inaugural Wellington ResBaz in April, Victoria University is hosting ResBaz2017!</br></br>We are in the planning stages now and seeking expressions of interest. If you have suggestions for next years event or want be involved we would love to hear from you.</br></br>Click <a href="https://docs.google.com/forms/d/1W9mKiDJhzG3M0QaFWqdAL8cOKruoz0WkfLGWaw7fHZo/viewform">here</a> to drop us a line and tell us your ideas or offer support. <br> To get an idea of what ResBaz is all about and to see what was offered in the inaugural event, head <a href="https://feb2016.resbaz.com/wellington">here<a/>
+<!-- Navigation -->
+<nav>
+    <div class="container">
+
+        <div class='col-md-6'>
+            <a href="https://2017.resbaz.com/">
+                <img class='nav-logo' src='https://raw.githubusercontent.com/resbaz/resbaz2017/gh-pages/img/resbaz_logos/ResBaz_transparent_cropped.png'></img>
+            </a>
+        </div>
+        <div class='col-md-6'>
+            <ul class="nav navbar-nav navbar-right nav-list">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#aboutSection">About</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#scheduleSection">Schedule</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#registerSection">Register</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#speakerSection">Speakers</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#awardsSection">Awards & Comps</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{page.splashImage}}); background-repeat: no-repeat; background-size: cover; ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-text">
+                    <p></br></br></p>
+                    <span class="name">{{page.location}}</span>
+                    <hr class="star-light"></hr>
+                    <span class="skills">{{page.dates}}</span>
+                    <p></br></br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id='aboutSection'>
+<div class = 'container' id = 'tool-list'>
+    <div class = "row">
+        <div class = "col-lg-12 text-center">
+            <h1> About  </h1>
+            <hr class = "star-primary">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-left">
+          <p>
+The Wellington Research Bazaar is a three day conference promoting the digital literacy emerging at the centre of modern research. In the spirit of a marketplace or bazaar, ResBaz is a highly participatory event where researchers from many different disciplines can learn new skills, showcase current projects, and share knowledge.
+<br>
+<br>
+Researchers at all levels and from all disciplines are encouraged to apply. <br>Research technologists who support researchers to do their job are welcome also. 
+<br>
+<br>
+The Wellington ResBaz will be broken into two key streams: <b>Code</b> and <b>Learn</b>. There's also a drop-in <b>Play</b> stream.
+<p>
+<b>Code</b>  is comprised of Software Carpentry courses where you can get stuck into learning the basics of research computing;
+<p>
+<b>Learn</b> has various sessions to introduce a range of interesting programs, tools, and research tips and tricks;
+  <p>
+<b>Play</b> will allow for hands-on interactions with a number of novel technologies. 
+
+<br>
+<br>
+There will be speakers from all stages of their research careers in various fields, as well as highlights on up-and-coming projects. The event is fully catered and will include a Data Olympics competition, Digital Research Awards, a beer and pizza evening &mdash; and of course valuable opportunities to share ideas and network.
+            <BR><br>
+            Read more about the history and philosophy of ResBaz in these blog posts from <a href="https://theresearchwhisperer.wordpress.com/2015/12/08/research-bazaar/" target = "_blank">The Research Whisperer</a> and <a href="http://software-carpentry.org/blog/2015/12/resbaz-feb2016.html" target = "_blank">Software Carpentry</a>.</p>
+            <br>
+            <br>
+        </div>
+    </div>
 
 
-schedule: We are planning the schedule now. Stay tuned! 
-days:
- <div class = "col-md-4 text-center">
+            <div class = "col-md-4 text-center">
                 <h4>CODE <p> (SOFTWARE CARPENTRY)</h4>
                 <div class = 'list-group'>
 
@@ -63,8 +147,8 @@ days:
                     </div>
 
                     <div class = 'list-group-item text-left'>
-                        <a class='menuItem' id = id8 >R for Novices</a><br>
-                        <p class = 'hidden' id = id8Blurb > Introductory session outlining the basics of <a href="https://www.r-project.org/">R</a>, a free software environment for statistical computing and graphics </p>
+                        <a class='menuItem' id = id8 >Introduction to R</a><br>
+                        <p class = 'hidden' id = id8Blurb > An introductory session outlining the basics of <a href="https://www.r-project.org/">R</a>, a free software environment for statistical computing and graphics, which will be followed by a hands-on workshop </p>
                     </div>
 
                     <div class = 'list-group-item text-left'>
@@ -82,11 +166,20 @@ days:
                         <p class = 'hidden' id = id12Blurb > <a href="https://www.latex-project.org/">LaTeX</a> is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing. </p>
                     </div>
 
+                    <div class = 'list-group-item text-left'>
+                        <a class='menuItem' id = id20 > Working with Wikipedia </a><br>
+                    </div>
 
                     <div class = 'list-group-item text-left'>
                         <a class='menuItem' id = id19 > Visualising with Word Tree</a><br>
                         <p class = 'hidden' id = id19Blurb > Create dynamic visualisations of word associations and concordance to bring to life text-based research using <a href="https://www.jasondavies.com/wordtree/"> Word Tree </a>.</p>
                     </div>
+
+                    <div class = 'list-group-item text-left'>
+                        <a class='menuItem' id = id19 > Arc GIS lite</a><br>
+                        <p class = 'hidden' id = id19Blurb >
+                    </div>
+
                 </div>
             </div>
 
@@ -95,7 +188,7 @@ days:
                 <div class = 'list-group'>
 
                     <div class = 'list-group-item text-left'>
-                        <a class='menuItem' id = id13 >Make Sessions</a><br>
+                        <a class='menuItem' id = id13 >Play Sessions</a><br>
                         <p class = 'hidden' id = id13Blurb > A range of tools and toys to experiment, interrogate and play with. </p>
                     </div>
 
@@ -105,13 +198,8 @@ days:
                     </div>
 
                     <div class = 'list-group-item text-left'>
-                        <a class='menuItem' id = id15 >7 x 7</a><br>
-                        <p class = 'hidden' id = id15Blurb > Seven seven-minute presentations from a range of researchers delving into the digital.</p>
-                    </div>
-
-                    <div class = 'list-group-item text-left'>
-                        <a class='menuItem' id = id16 >Repeater/Open Sessions</a><br>
-                        <p class = 'hidden' id = id16Blurb > Repeat of popular LEARN sessions or open sessions for collaboration and idea sharing </p>
+                        <a class='menuItem' id = id15 >5 x 5</a><br>
+                        <p class = 'hidden' id = id15Blurb > Five five-minute presentations from a range of researchers delving into the digital.</p>
                     </div>
 
                     <div class = 'list-group-item text-left'>
@@ -126,92 +214,8 @@ days:
 
                 </div>
             </div>
-speakers:
- - name:
-   img: img/placehold.jpg
-   blurb:
- - name: TBC
-   img: img/speakerTBC.jpg
-   blurb: Our KeyStory speakers are still to be confirmed - maybe it could be you! Watch this space.
- - name: TBC
-   img: img/speakerTBC.jpg
-   blurb: Our KeyStory speakers are still to be confirmed - maybe it could be you! Watch this space.
-sponsors:
- - name: 'Sponsor Number One'
-   img: fake-sponsor.png
- - name: 'Sponsor Number Two'
-   img: fake-sponsor.png
- - name: 'Sponsor Number Three'
-   img: fake-sponsor.png
----
 
-<!-- Navigation -->
-<nav>
-    <div class="container">
-
-        <div class='col-md-6'>
-            <a href="https://2017.resbaz.com/">
-                <img class='nav-logo' src='https://raw.githubusercontent.com/resbaz/resbaz2017/gh-pages/img/resbaz_logos/ResBaz_transparent_cropped.png'></img>
-            </a>
-        </div>
-        <div class='col-md-6'>
-            <ul class="nav navbar-nav navbar-right nav-list">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#aboutSection">About</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#scheduleSection">Schedule</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#registerSection">Register</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#speakerSection">Speakers</a>
-                </li>
-                </li>
-                <li class="page-scroll">
-                    <a href="https://docs.google.com/forms/d/1W9mKiDJhzG3M0QaFWqdAL8cOKruoz0WkfLGWaw7fHZo/viewform">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Header -->
-<header style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{page.splashImage}}); background-repeat: no-repeat; background-size: cover; ">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="intro-text">
-                    <p></br></br></p>
-                    <span class="name">{{page.location}}</span>
-                    <hr class="star-light"></hr>
-                    <span class="skills">{{page.dates}}</span>
-                    <p></br></br></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- About -->
-<section id='aboutSection'>
-    <div class = 'container' id = 'tool-list'>
-        <div class = "row">
-            <div class = "col-lg-12 text-center">
-                <h1>About</h1>
-                <hr class = "star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-              <p>{{page.about}}</p>
-            </div>
-        </div>
-    </div>
+</div>
 </section>
 
 
@@ -219,32 +223,194 @@ sponsors:
 
 <!-- Schedule -->
 <section id='scheduleSection'>
-    <div class='container'>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>Schedule</h1>
-                <hr class="star-primary">
-            </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-              <p>{{page.schedule}}</br></br></p>
-            </div>
+<div class='container'>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>Schedule</h1>
+            <hr class="star-primary">
         </div>
-            {% for d in page.days %}
-                <div class="col-md-4">
-                        <h4>{{ d.day }}</h4>                        
-                        <div class='list-group'>
-                        {% for session in d.sessions %}                  
-                                <a class='list-group-item'>{{ session.title }}</a>
-                        {% endfor %}
-                        </div>                        
-                </div>
-            {% endfor %}
+        <p> 
+            <div class="text-center"><p>
+        Full schedule coming shortly - stay tuned! </div>
+            <!--
+    <div class="row">
+        <div class="col-lg-12 text-left">
+          <p><p>Each day of the ResBaz CODE stream will be split into morning and afternoon events (scroll down for the LEARN schedule). Following a motivational Key Story, the mornings will consist of Software Carpentry lessons. Afternoon sessions will continue the morning's Software Carpentry workshop, before transitioning to a more informal series of events, with plenty of opportunites for you to decide parts of the programme, along with fun social activities and networking opportunities.<br><br>
+           
+            <br>
         </div>
     </div>
+
+            <div class="col-md-4">
+                    <h4>Wednesday February 8<br>&emsp;(AM105)</h4>
+                    <div class='list-group'>
+
+                            <a class='list-group-item'><b>8:30 Coffee and Registration</b></a>
+
+                            <a class='list-group-item'><b>9:00 Welcome and Key Story</b> (The Hub)<br>&emsp;&emsp;&nbsp;&nbsp;&nbsp;</a></a>
+
+                            <a class='list-group-item'><b>9:45</b> The UNIX Shell</a>
+
+                            <a class='list-group-item'><b>10:45 Morning Tea</b></a>
+
+                            <a class='list-group-item'><b>11:00</b> The UNIX Shell (cont)</a>
+
+                            <a class='list-group-item'><b>12:00 Lunch</b></a>
+
+                            <a class='list-group-item'><b>12:30</b>The UNIX Shell (cont)</a>
+
+                            <a class='list-group-item'><b>13:30</b>TBC</a>
+
+                            <a class='list-group-item'><b>15:00</b> </a>
+
+                            <a class='list-group-item'><b>16:05</b> Show (The Hub)</a>
+
+                            <a class='list-group-item'><b>16:25 Key Story</b> (The Hub)<br>&emsp;&emsp;&nbsp;&nbsp;&nbsp; </a>
+
+
+                    </div>
+            </div>
+
+            <div class="col-md-4">
+                    <h4>Thursday February 9<br>&emsp;(VENUE TBD)</h4>
+                    <div class='list-group'>
+
+                            <a class='list-group-item'><b>8:30 Coffee, Follow Up and Collaboration</b></a>
+
+                            <a class='list-group-item'><b>9:00 Key Story </b> (The Hub) <br>&emsp;&emsp;&nbsp;</a>
+
+                            <a class='list-group-item'><b>9:45</b> Version Control with Git</a>
+
+                            <a class='list-group-item'><b>10:45 Morning Tea</b></a>
+
+                            <a class='list-group-item'><b>11:00</b> Version Control with Git (cont)</a>
+
+                            <a class='list-group-item'><b>12:00 Lunch</b></a>
+
+                            <a class='list-group-item'><b>12:30</b> Version Control with Git (cont)</a>
+
+                            <a class='list-group-item'><b>13:45 HACK</b> &mdash; Data Olympics (The Hub) </a>
+
+                            <a class='list-group-item'><b>16:05</b> Show (AM102) </a>
+
+                            <a class='list-group-item'><b>16:25</b> Digital Research Awards (The Hub) </a>
+
+
+                    </div>
+            </div>
+
+            <div class="col-md-4">
+                    <h4>Friday February 10<br>&emsp;(VENUE TBD)</h4>
+                    <div class='list-group'>
+
+                            <a class='list-group-item'><b>8:30 Coffee, Follow Up and Collaboration</b></a>
+
+                            <a class='list-group-item'><b>9:00</b> Programming with Python</a>
+
+                            <a class='list-group-item'><b>10:45 Morning Tea</b></a>
+
+                            <a class='list-group-item'><b>11:00</b> Programming with Python (cont)</a>
+
+                            <a class='list-group-item'><b>12:15</b> Software Carpentry ends</a>
+
+                    </div>
+            </div>
+
+    </div>
+</div>
+
+<br>
+
+<div class='container'>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>Schedule - LEARN</h1>
+            <hr class="star-primary">
+        </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <b> All events in the LEARN stream will be held in The Hub</b><br>
+            <em> (Below is a provisional timetable and may be subject changes.)</em>
+            <br>
+            <br>
+        </div>
+    </div>
+
+            <div class="col-md-4">
+                    <h4>Wednesday February 8<br>&emsp;</h4>
+                    <div class='list-group'>
+
+                            <a class='list-group-item'><b>8:30 Coffee and Registration</b></a>
+
+                            <a class='list-group-item'><b>9:00 Welcome and Key Story</b><br>&emsp;&emsp;&nbsp;&nbsp;&nbsp;</a>
+
+                            <a class='list-group-item'><b>9:45</b> Introduction to R <br> &emsp;&emsp;&emsp;&emsp; <b>  OR </b> <br>  &emsp;&emsp;&nbsp;Digital Storytelling Tool Suite<br></a>
+
+                            <a class='list-group-item'><b>10:45 Morning Tea</b></a>
+
+                            <a class='list-group-item'><b>11:00</b> Introduction to R (cont) <br> &emsp;&emsp;&emsp;&emsp; <b>  OR </b> <br> &emsp;&emsp;&emsp; ArcGIS Lite</a>
+
+                            <a class='list-group-item'><b>12:00 Lunch</b></a>
+
+                            <a class='list-group-item'><b>12:30</b> 7 x 7 Presentation Session</a>
+
+                            <a class='list-group-item'><b>13:45</b> R for Novices  <br> &emsp;&emsp;&emsp;&emsp; <b>  OR </b> <br> &emsp;&emsp;&emsp;Quick Qualtrics <br> &emsp;&emsp;&emsp;&emsp; <b>  OR </b> <br>  &emsp;&emsp;&emsp;Repeater/Open Session</a>
+
+                            <a class='list-group-item'><b>15:00</b> Know thyself, show thyself </b></a>
+
+                            <a class='list-group-item'><b>16:05</b> Show and Data Olympics Preview</a>
+
+                            <a class='list-group-item'><b>16:25 Key Story</b> <br> &emsp;&emsp;&nbsp;&nbsp;&nbsp; Michael Radich and Jamie Norrish</a>
+
+                            <a class='list-group-item'><b>17:00 - 19:00 Social Event</b> <br> &emsp;&emsp;&emsp; @ The Hunter Lounge </a>
+
+                    </div>
+            </div>
+
+            <div class="col-md-4">
+                    <h4>Thursday February 9</h4>
+                    <div class='list-group'>
+
+                            <a class='list-group-item'><b>8:30 Coffee, Follow Up and Collaboration</b></a>
+
+                            <a class='list-group-item'><b>9:00 Key Story</b> <br> &emsp;&emsp;&nbsp;</a>
+
+                            <a class='list-group-item'><b>9:45</b> Learn LaTex <br> &emsp;&emsp;&emsp;&emsp; <b>  OR </b> <br> &emsp;&emsp;&nbsp; Weebly for Personal Websites <br> &emsp;&emsp;&emsp;&emsp; <b>  OR </b> <br> &emsp;&emsp;&nbsp;&nbsp;Repeater/Open Session</a></a>
+
+                            <a class='list-group-item'><b>10:45 Morning Tea</b></a>
+
+                            <a class='list-group-item'><b>11:00 </b> Nvivo for Novices <br> &emsp;&emsp;&emsp;&emsp; <b>  OR </b> <br> &emsp;&emsp;&emsp;Working with Wikipedia </a>
+
+                            <a class='list-group-item'><b>12:00 Lunch</b></a>
+
+                            <a class='list-group-item'><b>12:30</b> 7 x 7 Presentations <br> &emsp;&emsp;&emsp;&emsp; <b>  OR </b> <br> &emsp;&emsp;&nbsp;&nbsp;&nbsp;Data Hack preparation</a>
+
+                            <a class='list-group-item'><b>13:45 HACK</b>: Data Olympics</a>
+
+                            <a class='list-group-item'><b>16:05</b> Show </a>
+
+                            <a class='list-group-item'><b>16:25</b> Digital Research Awards</a>
+
+                            <a class='list-group-item'><b>17:30 Drop-in dinner</b> <br> &emsp;&emsp;&nbsp;&nbsp;&nbsp; (details to be advised)</a>
+
+                    </div>
+            </div>
+
+            <div class="col-md-4">
+                    <h4>Friday February 10<br></h4>
+                    <div class='list-group'>
+
+                            <a class='list-group-item'><b>8:30 Coffee, Follow Up and Collaboration</B> </a>
+
+                            <a class='list-group-item'><b>9:00 Drop in hacky session</B> <br> Work on your own projects using skills gained over the conference with the help of ResBaz instructors. <b><BR>(Please note this session will only be run if there's sufficient interest).</B></a>
+
+                    </div>
+            </div>
+
+    </div>
+</div>
 </section>
 
-<hr class='divider'></hr>
 
 <!-- Map -->
 <section id="mapSection">
@@ -280,10 +446,9 @@ sponsors:
             <p>Register <a href="http://vuw.libcal.com/event/2966884"> here </a> for the Wellington Research Bazaar.</p>
         </div>
                 <a href="http://vuw.libcal.com/event/2966884" target="_blank" class="btn btn-lg btn-outline light-bkg">
-                    <i class="fa fa-users"></i> Register
-                </a>
-            </div>
+                    <i class="fa fa-users"></i> Register </a>
         </div>
+    </div>
     </div>
 </div>
 </section>
@@ -295,13 +460,39 @@ sponsors:
             <div class="col-lg-12 text-center">
                 <h1>Meet Our Speakers</h1>
                 <hr class="star-primary">
-                {% for speaker in page.speakers %}
-                    <div class='col-md-3 speaker-tile'>
-                        <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>
-                        <h4>{{ speaker.name }}</h4>
-                        <p>{{ speaker.blurb }}</p>
+                <p><div class='col-md-4 speaker-tile'>
+                    <img class='img-circle' height=200 width=200 src=https://figure.nz/cdn/img/people/lillian-grace.9c3cf3724cb6.jpg></img>
+                    <h4>Lillian Grace</h4> <p><a href="https://figure.nz/"> Figure.nz </a>
+                    <div class="text-left">
+                    Lillian brings a new perspective on data, one where data is a language in which everyone can be fluent. She believes societies and individuals will benefit when anyone can use data to inform their thinking and insights without requiring intermediaries. 
+                    <br> <br>
+                    In establishing Figure.NZ in 2012, Lillian took the unique position of designating everyone to be a user of data. She leads the team to build systems and software, and to widely and deeply collaborate throughout New Zealand to deliver to this standard.
+                    <br> <br>
+                    Lillian is also on the Data Futures Partnership Working Group, as well as on the board of the NZ Innovation Partnership and of NZ Centre of Research Excellence Te Pūnaha Matatini. Previously Lillian was at Academy Award-Winning Massive Software, at think tank The New Zealand Institute. a href=""></a>
                     </div>
-                {% endfor %}
+                </div>
+
+                <div class='col-md-4 speaker-tile'>
+                    <img class='img-circle' height=200 width=170 src="http://www.victoria.ac.nz/images/staffpics/anne-niemetz.jpg"></img>
+                    <h4>Ann Niemetz</h4><P> <a href="http://www.victoria.ac.nz/design/about/staff/anne-niemetz">VUW - Media Design</a>
+                    <br>
+                    <div class="text-left">
+                    <a href="http://www.adime.de/">Anne Niemetz</a> is a media artist and designer working in the fields of wearable technology, interactive installation and audio-visual design. She is particularly fascinated by the convergence of art, science, design and technology, and she pursues collaborative and cross-disciplinary projects.
+                    <br> <br>
+                    Anne holds a Media Arts degree from the Staatliche Hochschule für Gestaltung Karlsruhe, with a focus in digital media and interactive sound installation, and an MFA in Design|Media Arts from the University of California Los Angeles. Since 2007 she’s been living and working in New Zealand, where she holds the position of Senior Lecturer in the Media Design programme at Victoria University of Wellington.
+                    </div>
+                </div>
+
+                <div class='col-md-4 speaker-tile'>
+                    <img class='img-circle' height=200 width=200 src="https://ecs.victoria.ac.nz/foswiki/pub/Main/KarstenLundqvist/KarstenLundqvist.jpg"></img>
+                    <h4>Karsten Lundqvist</h4><p> <a href="https://ecs.victoria.ac.nz/Main/IntroducingKarstenLundqvistToTheICTGraduateSchool">VUW - Computer Science</a>
+                    <div class="text-left">
+                    Karsten has a special interest in eLearning and knowledge representation, having run a successful <a href="https://www.futurelearn.com/courses/begin-programming">mobile development MOOC</a> for a number of years at Reading University before joining VUW last year.  He's had computer science as a hobby since he got his first Sinclair Spectrum in 1984, and started programming a year later on his Amstrad CPC 464. 
+                    <br><br>
+                    In my his spare time he runs a company where he develops mobile phone apps, at the moment mostly concentrated on the Android platform.
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -310,8 +501,98 @@ sponsors:
 
 <hr class='divider'></hr>
 
+<!-- Awards -->
+<section id='awardsSection'>
+    <div class='container'>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Digital Research Awards</h1>
+                <hr class="star-primary">
+                <div class="text-left">
+                <p> The Digital Research Awards recognise Victoria University of Wellington researchers who use digital technology to enhance or transform their methods or outcomes. There are three categories:
+                    <ul>
+                        <li> <b>Academic Staff Award for Digital Research Excellence</b>: For academics who champion the use of innovative technology to collect, analyse, visualise, collaborate, or publish during their research.</li>
+                        <li> <b>Postgraduate Student Award for Digital Research Excellence</b>: For Postgraduate students who are creating new ways of researching or experimenting with digital technology for research purposes.</li>
+                        <li> <b>Professional Staff Award for Excellence in Digital Research Support</b>: For professional staff who enable academics or post-graduate students to research in faster, better and more innovative ways using digital technology</li>
+                    </ul>
+                    <p>
+                    In order to make a nomination, please send an email to <a href mailto="jonathan.flutey@vuw.ac.nz">jonathan.flutey@vuw.ac.nz</a> that includes: 
+                    <ul>
+                        <li>Nominee’s name and the category for which you would like to nominate them</li>
+                        <li>Short supporting statement---why you’re nominating this person and what they have done</li>
+                        <li>Any relevant supporting evidence as an attachment</li>
+                    </ul>  
+                    <p> 
+                <b>Nominations close at 5pm on Friday 27 January.</b>
+                <br>
+                The award recipients will be announced at a ceremony as part of ResBaz 2017. </p>
+               </div>
+               <br>
+               <br>
+<!-- 5 x5  Competition -->
+               <h1>5 x 5 Lightning Talk Competition</h1>
+               <hr class="star-primary">
+               <p><b>Up for a Challenge? Communicate complex research concepts to a non-specialist audience in only 5 minutes and with only 5 static slides!
+
+There are prizes…</b>
+                <div class="text-left">
+                <p>Applications are now open to participate in a ‘lightning talk’ competition, which will be held as part of Victoria’s ResBaz 2017. Participants accept the challenge of communicating their research to a varied audience within a very tight format.
+<p>
+We are interested in hearing from any ResBaz participant who would like to try this format for communicating an interesting finding, a ground-breaking methodology, an unusual research concept, an innovative project—anything related to their research. The topic of the presentation need not be the result of digitally enabled research.
+<p>
+Presentations may be given by individuals or by teams.<sup>1</sup>
+<p>
+Interested parties should submit a 200-word abstract to by 5pm on 26 January to <a href=“mailto:matt.plummer@vuw.ac.nz”>Matt.Plummer@vuw.ac.nz</a>. Late submissions will not be considered.
+<p>
+<b>Evaluation</b>
+<p>
+Presentations will be evaluated on how clearly and engagingly the presenter communicates the research, and how well the presentation operates within the prescribed format.
+<p>
+<b>Prizes</b>:
+<p>
+    <ul>
+        <li>1st place: $100 Vicbooks Voucher</li>
+        <li>2nd place: $50 Vicbooks Voucher</li>
+        <li>People’s Choice: Recipient's choice of either a box of chocolates or a bottle of wine </li>
+    </ul>
+<p>
+A panel of judges will award 1st and 2nd place. The audience will be asked to vote for the People’s Choice award. Consequently, it may be possible for a place-getter to win the People’s Choice award as well.
+<p>
+<b>Rules</b>
+<p>
+<b>Eligibility</b>: Current Victoria staff members or students who are registered to participate in ResBaz 2017.
+<p>
+<b>Time restriction</b>: 5 minutes maximum. Presenters who reach the 5 minute maximum will be permitted to complete the current sentence, but must then stop.
+<p>
+<b>Slides</b>: Presenters are permitted a maximum of 5 slides, but may choose to use fewer. The slides must be static; no animation is allowed. The transition from one slide to the next must be automated—no manual clicking—but need not be evenly distributed across the presentation.<sup>2</sup>
+<p>
+<p>
+Participants who exceed the time restriction or whose slides do not conform to the requirements outlined above will not be considered for prizes.
+<p>
+<b>Resources</b>
+<p>
+Like Pecha Kucha and Ignite presentations, your aim in this competition is to be as engaging and informative as possible, in a short period of time and with automated, static slides.
+<p>
+These resources provide excellent tips for designing and presenting great presentations within strict limits. Just ignore the information that pertains specifically to Pecha Kucha or Ignite formats and focus instead on how preparing one of these limited format presentations differs from regular conference presentations.
+<p>
+    <ul>
+     <li><a href="http://www.speakingaboutpresenting.com/presentation-skills/pecha-kucha-presentation/"> Pecha Kucha Presentation Skills</a></li> 
+     <li><a href="https://paulgordonbrown.com/2014/12/13/your-ultimate-guide-to-giving-pechakucha-presentations/"> Ultimate Guide to Giving Pecha Kucha Presentations</a></li> 
+     <li><a href="https://www.oneclearmessage.co.za/pecha-kucha-presentation-style-tips/"> Pecha Kucha Style Tips </a></li> 
+     <li><a href="http://www.presentationzen.com/presentationzen/2009/06/felix-jungs-pecha-kucha-presentation-tips.html"> Felix Jung's Tips </a></li>
+    </ul>
+<sup>1</sup> Those considering entering a team should consider the added difficulties of a team presentation, such as the time taken up in the transitions between presenters.
+<br>
+ <sup>2</sup> For example, and assuming that the presenter decides to use the maximum 5 slides, he or she might programme the slides to change at 30 seconds, 90 Seconds, 150 seconds, 240 seconds and 290 seconds.
+            </div> 
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
 <!-- Sponsors -->
-<section id="sponsors">
+<section id="sponsorsSection">
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
@@ -331,6 +612,10 @@ sponsors:
                   <img src=https://www.nesi.org.nz/sites/default/themes/nesi_bootstrap/img/logo.png></img>
               </div>
 
+                <div class='sponsor-tile'>
+                  <img src=http://www.victoria.ac.nz/antarctic/images/NIWA.jpg></img>
+              </div>
+              </div>
       </div>
     </div>
 </div>

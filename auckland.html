@@ -1,6 +1,5 @@
 ---
 layout: site
-permalink: auckland
 
 location: Auckland
 
@@ -50,6 +49,9 @@ days:
     - title: Hui, Games, and Activities 
 
 speakers:
+ - name: Professor Sir Peter Gluckman
+   img: img/akl/Peter.jpg
+   blurb: Chief Science Advisor to the Prime Minister of New Zealand, Sir Peter is one the country’s best known biomedical scientists. Sir Peter is internationally respected for his work promoting the use of evidence in policy formation and the translation of scientific knowledge into better social, economic, and environmental outcomes. Sir Peter is the author of over 700 scientific papers, reviews and books for both technical and lay audiences. His research has won him numerous awards and international recognition including Fellowship of the Commonwealth’s most prestigious scientific organisation, The Royal Society (London). 
  - name: Professor Donna Rose Addis
    img: img/akl/Addis_2014.jpeg
    blurb: Digital Social Science. From the study of personal autobiographies to neuroscience, Professor Donna Rose Addis will discuss how she draws on her background in History and Psychology, and combines this with qualitative and quantitative analytic techniques to understand the creative potential of the brain.
@@ -62,6 +64,12 @@ speakers:
  - name: Associate Professor Cather Simpson
    img: img/akl/Cather.png
    blurb: Food, Farms and Photonics. The Photon Factory is a high-tech laser facility at U. Auckland that uses state-of-the-art photonics for everything. Cather will talk about how exotic light-based technologies are giving her team new insight and tools to help shape the dairy industry in the 21st century. She’ll also address how the Photon Factory’s fun-loving, cross-disciplinary teams underpin the lab’s thriving entrepreneurial ethos.
+ - name: Kate Riegle-Van West
+   img: img/akl/kate.jpg
+   blurb: Kate is an interdisciplinary artist interested in the health benefits of International Poi (a ball on the end of a cord which is swung in circles around the body). She has studied poi in a variety of ways over the past decade, such as opening a flow arts centre in Chicago, creating the Orbitar (a digital poi musical instrument), and giving a TED talk on poi. She is currently conducting PhD research on the effects of poi on physical and cognitive function in healthy older adults at the University of Auckland, working between the Centre for Brain Research and the Dance Department. This research is the first to evaluate the health benefits of poi through a randomised controlled trial, and will hopefully pave the way for future poi and health research. Kate will give a brief presentation about her research, and then it's your turn to have a go, as Kate will lead an International Poi lesson. No experience necessary!
+
+
+
 
 sponsors:
  - name: 'UoA Centre for eResearch'
@@ -530,7 +538,7 @@ sponsors:
                 <h1>Meet Our Speakers</h1>
                 <hr class="star-primary">
                 {% for speaker in page.speakers %}
-                    <div class='col-md-3 speaker-tile'>
+                    <div class='col-md-4 speaker-tile'>
                         <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>
                         <h4>{{ speaker.name }}</h4>
                         <p>{{ speaker.blurb }}</p>

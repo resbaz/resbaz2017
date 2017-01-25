@@ -1,0 +1,269 @@
+---
+layout: site
+permalink: cuenca-es
+
+location: Cuenca
+
+dates: Enero 26 - 28, 2017
+
+splashImage: img/cuenca.jpg
+
+map: sites/cuenca.geojson
+
+accommodation: Cada asistente debe organizar sus detalles de Hospedaje. De todas maneras, estamos gustosos de ayudarte, escribenos un email a eren.australia@gmail.com con tus inquietudes.
+
+about:  Research Bazaar (Bazar de Investigación) es un festival mundial que promueve el alfabetismo digital como eje estructural del proceso investigativo moderno. En enero y febrero del 2017, eventos ResBaz se llevarán a cabo en centros universitarios alrededor del mundo. El objetivo de estos eventos es dotar a los equipos de investigadores de habilidades digitales y herramientas, para realizar un proceso investigativo mejor, más rápido e inteligente.
+
+schedule: El taller durara 3 días, donde aprenderemos de diversas herramientas digitales de utilidad para la investigación. El calendario de trabajo es el siguiente:.
+days:
+ - day: Jueves, 26 de enero del 2017
+   sessions:
+    - title: 13:00 - 13:30 Integración Grupal
+    - title: 13:30 - 15:30 Taller Mendeley
+    - title: 15:30 - 16:00 Coffee Break
+    - title: 16:00 - 18:30 Taller CLI
+    - title: 18:30 - 19:00 Break
+    - title: 19:00 - 21:30 Taller Python
+ - day: Viernes, 27 de enero del 2017
+   sessions:
+    - title: 13:00 - 14:00 Conversatorio Proyectos Investigación
+    - title: 14:00 - 16:30 Taller GIT & GitHub
+    - title: 16:30 - 17:00 Coffee Break
+    - title: 17:00 - 19:30 Taller D3JS
+    - title: 19:30 - 20:00 Break
+    - title: 20:00 - 21:00 Integración Grupal
+ - day: Sábado, 28 de enero del 2017
+   sessions:
+    - title: 08:00 - 10:15 Taller R
+    - title: 10:15 - 10:30 Coffee Break
+    - title: 10:30 - 12:30 Taller LaTeX
+    - title: 12:30 - 13:00 Retroalimentación/Cierre
+speakers:
+ - name: Ivan Sanchez
+   img: img/cue/isanchez2.jpg
+   blurb:  Coordinador de ResBaz-EC. Sera el instructor de Git, herramienta para manejo de versiones de software.
+   linkedin: "https://ec.linkedin.com/in/iasanchez" 
+ - name: Cristian Montero
+   img: img/cue/cmontero.jpg
+   blurb: Coordinador de Servicios Informáticos de la Universidad de Cuenca. Es el instructor de Mendeley y de LaTeX.
+   linkedin: "http://ec.linkedin.com/in/cristian-montero-b4739338/en"
+ - name: Marlene Robles
+   img: img/cue/mrobles2.jpg
+   blurb: Investigadora en el campo de la visualización de datos. Marlene será la facilitadora del taller de D3JS.
+   linkedin: "https://au.linkedin.com/in/marlene-robles-63070aa1"
+ - name: Karla Rodriguez
+   img: img/cue/krodriguez.png
+   blurb: Coordinadora de Logística ResBaz por Parte de EREN. Karla trabaja en temas de investigación rural.
+   linkedin: "https://au.linkedin.com/in/karlarodriguezec/en"
+ - name: David Amores
+   img: img/cue/damores2.jpg
+   blurb: Interesado en el análisis de datos, machine learning, el desarrollo de aplicaciones web y análisis de redes sociales usando Python.
+   linkedin: "https://www.linkedin.com/in/david-amores-4a971384"
+
+sponsors:
+ - name: 'Universidad de Cuenca'
+   img: logo-ucuenca5.png
+   url: "https://www.ucuenca.edu.ec/"
+ - name: 'EREN: Ecuadorian Research and Entrepreneurship Network'
+   img: eren-banner.png
+   url: "http://es.erenetwork.org/"
+---
+
+<!-- Navigation -->
+<nav>
+    <div class="container">
+
+        <div class='col-md-8'>
+            <a href="https://2017.resbaz.com/">
+                <img class='nav-logo' src='https://raw.githubusercontent.com/resbaz/resbaz2017/gh-pages/img/resbaz_logos/ResBaz_transparent_cropped.png'></img>
+            </a>
+        </div>
+        <div class='col-md-4'>
+            <ul class="nav navbar-nav navbar-right nav-list">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#aboutSection">Acerca</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#scheduleSection">Actividades Programadas</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#registerSection">Registrarse</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#speakerSection">Facilitadores</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{page.splashImage}}); background-repeat: no-repeat; background-size: cover; ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-text">
+                    <p></br></br></p>
+                    <span class="name">{{page.location}}</span>
+                    <hr class="star-light"></hr>
+                    <span class="skills">{{page.dates}}</span>
+                    <p></br></br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About -->
+<section id='aboutSection'>
+    <div class = 'container' id = 'tool-list'>
+        <div class = "row">
+            <div class = "col-lg-12 text-center">
+                <h1>Acerca</h1>
+                <hr class = "star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.about}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<hr class='divider'></hr>
+
+<!-- Schedule -->
+<section id='scheduleSection'>
+    <div class='container'>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Actividades Programadas</h1>
+                <hr class="star-primary">
+            </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>{{page.schedule}}</br></br></p>
+            </div>
+        </div>
+            {% for d in page.days %}
+                <div class="col-md-4">
+                        <h4>{{ d.day }}</h4>                        
+                        <div class='list-group'>
+                        {% for session in d.sessions %}                  
+                                <a class='list-group-item'>{{ session.title }}</a>
+                        {% endfor %}
+                        </div>                        
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+<!-- Map -->
+<section id="mapSection">
+    <div class='container'>
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Lugar</h1>
+                    <hr class="star-primary">
+                </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <script src="https://embed.github.com/view/geojson/resbaz/resbaz2017/gh-pages/{{page.map}}"></script>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+<!-- Registration -->
+<section id="registerSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Registrarse</h1>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScu-gRYukF6xm6oGSQklt3YO2OyeBs0ZX5IGkxORXr3V-Ov4w/viewform">Llena el formulario de registro.</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+<!-- Speakers -->
+<section id='speakerSection'>
+    <div class='container'>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Conoce a los Facilitadores</h1>
+                <hr class="star-primary">
+                {% for speaker in page.speakers %}
+                    <div class='col-md-4 speaker-tile'>
+			<a href={{ speaker.linkedin }}>
+                            <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>                        
+			    <h4>{{ speaker.name }}</h4>
+			</a>
+                            <p>{{ speaker.blurb }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<hr class='divider'></hr>
+
+<!-- Sponsors -->
+<section id="sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Auspiciantes</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>Agradecemos a nuestros auspiciantes por permitirnos hacer un taller ResBaz en {{page.location}}.</p>
+              {% for sponsor in page.sponsors %}
+                  <div class='sponsor-tile'>
+		      <a href={{ sponsor.url}}>
+		              <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
+		              <h4>{{ sponsor.name }}</h4>
+		      </a>
+                  </div>
+              {% endfor %}
+          </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- TEST SCRIPT -->
+<script> 
+    // var listElements1 = document.getElementsByClassName('list-group-item')
+    // console.log(listElements1)
+    var toolList = document.getElementById('tool-list')
+    var listElements = toolList.getElementsByClassName('list-group-item')
+    for(var i=0; i<listElements.length; i++){
+            listElements[i].children[0].onclick = function(){
+                 // toolList.getElementsByClassName('hidden').hide();
+                 var idOfBlurb = this.id + 'Blurb';
+                 document.getElementById(idOfBlurb).classList.toggle('hidden');
+            }
+        }
+
+</script>
