@@ -212,93 +212,94 @@ supporters:
 
 <!-- Schedule -->
 <section id='scheduleSection'>
-    <div class='container'>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>Schedule</h1>
-                <hr class="star-primary">
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>
-                        The event runs around the Knowledge Bazaar, in the
-                        form of a tent on Lower Henderson Court lawn. 
-                        </br>
-                        Workshops that will require working on laptops will be held in
-                        the nearby building 300. </br>
-                        The opening and all morning activities, coffee breaks and evening 
-                        sundowners will be at the tent.
-                    </p>
-                </div>
-            </div>
-            {% for d in page.days %}
-            <div class="col-md-4">
-              <h4>{{ d.day }}</h4>
-              <div class='list-group'>
-                {% for session in d.sessions %}
-                <a class='list-group-item'>{{ session.title }}</a>
-                {% endfor %}
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <dl>
- <dt>Stream workshops</dt><dd>These are run in parallel and are comprised of multiple classes.
-                  You will be able to choose your stream upon
-                  registration. The streams are:
-		      <ul>
-			      <li>Software Carpentry (Python)</li>
-			      <li>Software Carpentry (R)</li>
-			      <li>Data Carpentry</li>
-		      </ul>
-		      Software Carpentry teaches introductory research computing skills, including 
-		      programming in either Python or R, how to use the command line and version control 
-		      using git and github.
-		      </br>
-		      Data Carpentry teaches specific tools to work with data such as SQL and
-		      Data Analysis and Visualization in Python using pandas. 
-		      If you're not sure what to choose, we recommend one of
-		      the Software Carpentry streams.</dd> 
-		      </br>
-              <dt>Elective classes</dt><dd>These are independent classes (workshops, demos or group discussions).
-                  You will decide on the day what elective classes to
-                  attend, look out for what's on offers on the board in
-                  the morning. Confirmed electives include:
-                  <ul>
-			      <li>Making a career leap</li>
-			      <li>Your thesis in 3 minutes</li>
-			      <li>Machine learning: from Zero to Hero</li>
-			      <li>Interactive web apps with R Shiny</li>
-			      <li>NVivo (for windows)</li>
-			      <li>Writing a reproducible paper</li>
-			      <li>Data Science at the command line</li>
-			      <li>An intro to design thinking (Curtin Makers)</li>
-		      </ul>
-            </dd> </br>
-                <dt>Social activities and networking events</dt><dd>Community engagement 
-                is at the core of Research Bazaar!
-                  Make sure you come along to as many as possible to build a continuing 
-                  support network for life after ResBaz.  
-                  You can look forward to:
-                   <ul>
-			      <li>Morning warm ups (meditation sessions confirmed)</li>
-			      <li>Coffee at the bazaar, including talks and demos and your chance to be 
-			      part of a podcast</li>
-			      <li>Outdoor games, e.g., Giant Jenga and Connect 4</li>
-			      <li>Key stories</li>
-			      <li>Movie night - we'll be screening the PhD movie 2</li>
-			      <li>Your posters displayed</li>
-			      <li>A choice of food trucks for lunch</li>
-		      </ul>
-                </dd>
-              </dl>
-            </div>
+  <div class='container'>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>Schedule</h1>
+        <hr class="star-primary">
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>
+            The event runs around the Knowledge Bazaar, in the form of a tent on Lower Henderson Court lawn.
+            </br>
+            Workshops that will require working on laptops will be held in the nearby building 300. </br>
+            The opening and all morning activities, coffee breaks and evening sundowners will be at the tent.
+          </p>
         </div>
+      </div>
+      {% for d in page.days %}
+      <div class="col-md-4">
+        <h4>{{ d.day }}</h4>
+        <div class='list-group'>
+          {% for session in d.sessions %}
+          <a class='list-group-item'>{{ session.title }}</a> {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
     </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <dl>
+          <dt>Stream workshops</dt>
+          <dd>These are run in parallel and are comprised of multiple classes. You will be able to choose your stream upon registration.
+            The streams are:
+            <ul>
+              <li>Software Carpentry (Python)</li>
+              <li>Software Carpentry (R)</li>
+              <li>Data Carpentry</li>
+            </ul>
+            Software Carpentry teaches introductory research computing skills, including programming in either Python or R, how to use
+            the command line and version control using git and github.
+            </br>
+            Data Carpentry teaches specific tools to work with data such as SQL and Data Analysis and Visualization in Python using pandas.
+            If you're not sure what to choose, we recommend one of the Software Carpentry streams.</dd>
+          </br>
+          <dt>Elective classes</dt>
+          <dd>These are independent classes (workshops, demos or group discussions). You will decide on the day what elective
+            classes to attend, look out for what's on offers on the board in the morning. Confirmed electives include:
+            <ul>
+              <li>Making a career leap</li>
+              <li>Your thesis in 3 minutes</li>
+              <li>Machine learning: from Zero to Hero</li>
+              <li>Interactive web apps with R Shiny</li>
+              <li>NVivo (for windows)</li>
+              <li>Writing a reproducible paper</li>
+              <li>Data Science at the command line</li>
+              <li>An intro to design thinking (Curtin Makers)</li>
+            </ul>
+          </dd>
+          </br>
+          <dt>Social activities and networking events</dt>
+          <dd>Community engagement is at the core of Research Bazaar! Make sure you come along to as many as possible to build
+            a continuing support network for life after ResBaz. You can look forward to:
+            <ul>
+              <li>Morning warm ups (meditation sessions confirmed)</li>
+              <li>Coffee at the bazaar, including talks and demos and your chance to be part of a podcast</li>
+              <li>Outdoor games, e.g., Giant Jenga and Connect 4</li>
+              <li>Key stories</li>
+              <li>Movie night - we'll be screening the PhD movie 2</li>
+              <li>Your posters displayed</li>
+              <li>A choice of food trucks for lunch</li>
+            </ul>
+          </dd>
+          </br>
+          <dt>Closing round table</dt>
+          <dd>Participants:
+            <ul>
+              <li>Andrea Bedini</li>
+              <li>Kate Wright</li>
+              <li>Jens Klump</li>
+              <li>Michelle Sandford</li>
+              <li>Elsa Jordaan</li>
+              <li>Kay O'Halloran</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
 </section>
-
 <hr class='divider'></hr>
 
 <!-- Map -->
