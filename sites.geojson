@@ -156,6 +156,18 @@
                 "marker-color": "#2b3990",
                 "details": "<a href='https://2017.resbaz.com/wellington'>Wellington</a>"
             }
+        },
+        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":[151.201333,-33.883833]
+            },
+            "properties": {
+                "marker-color": "#2b3990",
+                "details": "<a href='/sydney'>Sydney</a>"
+            }
         }
     ]
 }
