@@ -2,3 +2,4 @@
 /.jekyll-metadata
 /.sass-cache/
 .DS_Store
+.vagrant
