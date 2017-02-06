@@ -14,31 +14,39 @@ schedule:
 days:
   - day: Monday, 30 January
     sessions:
-      - title: Stream class 1
-      - title: Coffee at the bazaar
-      - title: Stream class 2
-      - title: Lunch
-      - title: Elective classes
-      - title: Key story
+      - title: 08:00 | Registration open
+      - title: 08:30 | Opening and Welcome to Country
+      - title: 09:00 | Stream class 1
+      - title: 10:30 | Coffee at the bazaar
+      - title: 11:30 | Stream class 2
+      - title: 13:00 | Lunch
+      - title: 14:00 | Elective classes
+      - title: 17:00 | Key story (Prof Phil Bland - Fireballs in the sky)
+      - title: Poster showcasing + Drinks & nibbles
   - day: Tuesday, 31 January
     sessions:
-      - title: Stream class 3
-      - title: Coffee at the bazaar
-      - title: Stream class 4
-      - title: Lunch
-      - title: Stream class 5 & 6
-      - title: Key story
-      - title: Movie night
+      - title: 08:30 | Warm up meditation
+      - title: 09:00 | Stream class 3
+      - title: 10:30 | Coffee at the bazaar
+      - title: 11:30 | Stream class 4
+      - title: 13:00 | Lunch
+      - title: 14:00 | Stream class 5 & 6
+      - title: 17:00 | Key story (TBC)
+      - title: 17:30 | PhD Movie 2 screening
+      - title: Drinks & nibbles
   - day: Wednesday, 1 February
     sessions:
-      - title: Stream class 7
-      - title: Coffee at the bazaar
-      - title: Stream class 8
-      - title: Lunch
-      - title: Elective classes
-      - title: Key story
+      - title: 08:30 | Warm up meditation
+      - title: 09:00 | Stream class 7
+      - title: 10:30 | Coffee at the bazaar
+      - title: 11:30 | Stream class 8
+      - title: 13:00 | Lunch
+      - title: 14:00 | Elective classes
+      - title: 16:00 | Key story (Michelle Sandford - TechOutsider & Microsoftie)
+      - title: 16:30 | Closing Round Table
+      - title: Drinks & nibbles
 speakers:
- - name:
+ - name: Phil Bland
    img: img/placehold.jpg
    blurb:
  - name: TBC
@@ -122,15 +130,27 @@ supporters:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
+            <p align="justify">
+                 	Are you struggling with manual data entry? Don’t know how to process
+                 	all your data in a fast and reproducible manner? Had enough of propriety
+                 	 software? Need to know how to typeset you thesis asap?
+                 	 </br>
+                 	 Then come along to the 2017 Research Bazaar!
+                 	 </p>
                 <p align="justify">
-                    We are pleased to announce the second Perth Research Bazaar, hosted
-                    at Curtin University in the last week of January.
+                </br>
+                    We are pleased to announce that the second Perth Research Bazaar will
+                    be hosted at Curtin University in the last week of January.
                 </p>
                 <p align="justify">
-                 	The Perth ResBaz will offer researchers (at any stage) the opportunity
-                 	to build skills and engage in community building.
+                </br>
+                 	The Perth Research Bazaar (or ResBaz for short) will bring together
+                 	researchers (at any stage) from all 5 WA universities giving them the
+                 	opportunity to build skills and engage in community building.
                  	We have a full program planned with key stories, programming training,
-                 	including many exciting electives and networking events at our Knowledge Bazaar.
+                 	including many exciting electives and networking events at our
+                 	Knowledge Bazaar.
+
 			</p>
             </div>
         </div>
@@ -151,6 +171,15 @@ supporters:
     <div class="row">
       <div class="col-lg-12">
         <p>
+        We currently have a wait list while successful applicants have been given the
+        opportunity to register for ResBaz. However, we asked them to register by
+        Friday 21 January 2017 and we will start to offer any remaining places to
+        applicants on our wait list thereafter. So please do still put in your application
+        so we know that you are interested in coming along! This will also ensure you are
+        on our mailing list and get information on future events.
+		</p>
+		</br>
+        <p>
           Places are limited, demand is high and we want to make
           sure everybody has a fair chance of participating in this
           unique event.
@@ -168,9 +197,7 @@ supporters:
           surprised by the various disciplines that use the same tools as you.
         </p>
         <p>
-          We’ll email you the outcome of your application by mid-December. If
-          you make it in, the registration will be $50 and cover all the
-          classes, refreshments and lunch.
+          The registration will be $50 and cover all the classes, refreshments and lunch.
         </p>
         <p class="text-center">
           <br/>
@@ -185,54 +212,94 @@ supporters:
 
 <!-- Schedule -->
 <section id='scheduleSection'>
-    <div class='container'>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>Schedule</h1>
-                <hr class="star-primary">
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>
-                        The event runs around the Knowledge Bazaar, in the
-                        form of a tent on Lower Henderson Court lawn. Workshop
-                        that will require working on laptops will be held in
-                        the nearby building 300.
-                        Launches, coffee breaks and evening sundowners will be
-                        at the tent.
-                    </p>
-                </div>
-            </div>
-            {% for d in page.days %}
-            <div class="col-md-4">
-              <h4>{{ d.day }}</h4>
-              <div class='list-group'>
-                {% for session in d.sessions %}
-                <a class='list-group-item'>{{ session.title }}</a>
-                {% endfor %}
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <dl>
-                <dt>Stream workshops</dt><dd>These are run in parallel and are comprised of multiple classes.
-                  You will be asked to choose your stream upon
-                  registration.</dd>
-                <dt>Elective classes</dt><dd>These are independent classes (workshops, demos or group discussions).
-                  You will decide on the day what elective classes to
-                  attend, look out for what's on offers on the board in
-                  the morning.</dd>
-                <dt>Social activities and networking events</dt><dd>Community engagement is at the core of Research Bazaar!
-                  Make sure you come along to as many as possible to build a continuing support network for life after ResBaz.
-                </dd>
-              </dl>
-            </div>
+  <div class='container'>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>Schedule</h1>
+        <hr class="star-primary">
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>
+            The event runs around the Knowledge Bazaar, in the form of a tent on Lower Henderson Court lawn.
+            </br>
+            Workshops that will require working on laptops will be held in the nearby building 300. </br>
+            The opening and all morning activities, coffee breaks and evening sundowners will be at the tent.
+          </p>
         </div>
+      </div>
+      {% for d in page.days %}
+      <div class="col-md-4">
+        <h4>{{ d.day }}</h4>
+        <div class='list-group'>
+          {% for session in d.sessions %}
+          <a class='list-group-item'>{{ session.title }}</a> {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
     </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <dl>
+          <dt>Stream workshops</dt>
+          <dd>These are run in parallel and are comprised of multiple classes. You will be able to choose your stream upon registration.
+            The streams are:
+            <ul>
+              <li>Software Carpentry (Python)</li>
+              <li>Software Carpentry (R)</li>
+              <li>Data Carpentry</li>
+            </ul>
+            Software Carpentry teaches introductory research computing skills, including programming in either Python or R, how to use
+            the command line and version control using git and github.
+            </br>
+            Data Carpentry teaches specific tools to work with data such as SQL and Data Analysis and Visualization in Python using pandas.
+            If you're not sure what to choose, we recommend one of the Software Carpentry streams.</dd>
+          </br>
+          <dt>Elective classes</dt>
+          <dd>These are independent classes (workshops, demos or group discussions). You will decide on the day what elective
+            classes to attend, look out for what's on offers on the board in the morning. Confirmed electives include:
+            <ul>
+              <li>Making a career leap</li>
+              <li>Your thesis in 3 minutes</li>
+              <li>Machine learning: from Zero to Hero</li>
+              <li>Interactive web apps with R Shiny</li>
+              <li>NVivo (for windows)</li>
+              <li>Writing a reproducible paper</li>
+              <li>Data Science at the command line</li>
+              <li>An intro to design thinking (Curtin Makers)</li>
+            </ul>
+          </dd>
+          </br>
+          <dt>Social activities and networking events</dt>
+          <dd>Community engagement is at the core of Research Bazaar! Make sure you come along to as many as possible to build
+            a continuing support network for life after ResBaz. You can look forward to:
+            <ul>
+              <li>Morning warm ups (meditation sessions confirmed)</li>
+              <li>Coffee at the bazaar, including talks and demos and your chance to be part of a podcast</li>
+              <li>Outdoor games, e.g., Giant Jenga and Connect 4</li>
+              <li>Key stories</li>
+              <li>Movie night - we'll be screening the PhD movie 2</li>
+              <li>Your posters displayed</li>
+              <li>A choice of food trucks for lunch</li>
+            </ul>
+          </dd>
+          </br>
+          <dt>Closing round table</dt>
+          <dd>Participants:
+            <ul>
+              <li>Andrea Bedini (Curtin)</li>
+              <li>Kate Wright (UWA)</li>
+              <li>Jens Klump (CSIRO)</li>
+              <li>Michelle Sandford (Microsoft)</li>
+              <li>Elsa Jordaan (Woodside)</li>
+              <li>Kay O'Halloran (Curtin)</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
 </section>
-
 <hr class='divider'></hr>
 
 <!-- Map -->

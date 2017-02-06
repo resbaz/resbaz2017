@@ -1,15 +1,15 @@
 {
     "type": "FeatureCollection",
-    "features": [
+    "features": [    
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[174.768367,-41.289287]
+                "coordinates":[151.201320, -33.883827]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "The Hub, Kelburn Campus"
+                "details": "University of Technology Sydney"
             }
         }
     ]

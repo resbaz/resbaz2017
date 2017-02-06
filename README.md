@@ -16,6 +16,30 @@ This website is built from the [Start Bootstrap Freelancer theme](https://github
  - In the base directory of this repo, do `bundle exec jekyll serve`
  - If all has gone well, you'll be able to visit your version of the main website at `http://127.0.0.1:4000/` and the various city pages at `http://127.0.0.1:4000/melbourne`, `http://127.0.0.1:4000/auckland`, etc.
 
+### Alternative Setup Instructions Using Vagrant
+
+If you struggle to get Jekyll working on your computer you could try to use the Vagrant development environment instead. In the base directory of this repo, do:
+
+```bash
+vagrant up
+vagrant ssh
+cd /vagrant/
+bundle exec jekyll serve --host 10.0.30.15
+```
+
+Note that the `vagrant up` command can take a while the first time you run it.
+
+Then on your computer open `http://10.0.30.15:4000/` in your browser.
+
+When you are done and want to shut the Vagrant virtual machine down:
+
+```bash
+# press ctrl-c to stop, and type:
+exit  # Logs you out of the Vagrant machine and you should be back in your own terminal
+vagrant halt  # Halts the running Vagrant virtual machine
+vagrant destroy  # Removes the vagrant machine permanently
+```
+
 ### Contribution Guide
 
 To create a page for your local site (which is referred to as City in this example), submit the following in a pull request: 
@@ -30,3 +54,6 @@ you only need step 2.)
 
 If you have any trouble creating the pull request,
 please feel free to open an issue and one of the site maintainers will help you out.
+
+Tip: I've found that the YAML text block at the top of the HTML template files can be tricky to get right. Copy and paste the text between the `---` lines into this online validator: <http://yaml-online-parser.appspot.com/>
+

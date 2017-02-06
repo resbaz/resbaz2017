@@ -1,47 +1,43 @@
 ---
 layout: site
-permalink: oslo
+permalink: tucson
 
-location: Oslo
+location: Tucson, Arizona
 
-dates: 1 February - 3 February, 2017
+dates: 31 March - 1 April, 2017
 
-splashImage: http://www.uio.no/om/designmanual/images/0-0-forord.jpg
+splashImage: /img/tucson.jpg
 
-map: sites/oslo.geojson
+map: sites/tucson.geojson
 
-accommodation: To be determined, Blindern Campus.
+accommodation: University of Arizona
 
-about: The university of Oslo is proud to be hosting ResBaz for the first time in 2017!</br></br>The Research Bazaar is a (free-of-charge) 3-day intensive festival and conference where researchers come together to up-skill in next generation digital research tools and scholarship. In the spirit of a marketplace or bazaar, ResBaz is a highly participatory event where researchers from many different disciplines can learn, share knowledge and skills, and have fun!</br></br>Who should attend? Researchers at ALL levels from ALL disciplines. PhD and research Masters students are especially encouraged to apply. Research technologists who support researchers to do their job should also come along!</br></br>ResBaz is particularly aimed at those new to digital research tools.
+about: Introducing Research Bazaar, or &#35;ResBazAZ for short, a worldwide festival promoting the digital literacy emerging at the center of modern research. Research Bazaar started two years ago in Melbourne, Australia and has gone global. This year it comes to UA for the first time! The event aims to equip researchers from all career stages with the digital skills and tools required to do their research better, faster, and smarter.<br/><br/>Think unconference coupled with highly useful workshops to increase your skill set exponentially!
 
-schedule: We will provide a mix of Software/Library Carpentry workshops and other events. The full schedule is <a href="http://www.ub.uio.no/english/courses-events/events/ureal/2017/170201ResBaz.html">here</a>.
+schedule: Please join us Friday, March 31 and Saturday, April 1 for our free event. Here are the basics:<br/><br/>Friday is principally designed to get to know one another and create affinity groups in “unconference” style. In other words, talk to people, discover opportunities to learn from one another, spontaneously work on projects, bring your questions to look for answers and crowd source solutions. Never been to an unconference before? Find out more about unconferences here.<br/><br/>10am-12pm Welcome and Lightning Talks (stage at the UA Mall)<br/>Participants will introduce themselves through short lightning talks about what they research,  their skillset, what they want to know, questions they have. The only requirement is that you keep it under 10 minutes, and your talk somehow relates to the general themes of digital literacy and modern research. Easy, right?<br/><br/>Throw up your ideas for pop-up sessions. Want to talk about data visualization? Python? GIS? Social Media? GitHub? We will have a central place to coordinate and facilitate your groups meeting among tents on the mall. You can get started early by adding your ideas now.<br/><br/>12pm-4pm<br/>Unconference style meetups. Feel free to gather in the tents, go as a group to lunch, or propose a dedicated workshop for Saturday.<br/><br/>4pm<br/>Unsponsored happy hour. Continue the party at Pasco with the ResBaz AZ coordinators.<br/><br/>Saturday (Science-Engineering Library)<br/><br/>9am Coffee and light refreshments start off the day at the Science-Engineering Library<br/>Workshops begin at 9:30am in both the Main Library and Science-Engineering Library<br/>The Unconference continues in the Collaborative Classroom of Science-Engineering all day! Continue the conversations, meet new people, work on projects.
+
 days:
- - day: Wednesday, 1 February
+ - day: Friday, March 31
    sessions:
-    - title: Theme 'Make'
-    - title: Workshop - Software Carpentry (day 1)
-    - title: Workshop - Data Management planning
-    - title: Workshop - Zotero
- - day: Thursday, 2 February
+    - title: Welcome and Lightning Talks (stage at the UA Mall), 10am-12pm
+    - title: Unconference style meetups, 12pm-4pm
+    - title: Unsponsored happy hour, Pasco Kitchen and Lounge, 4pm onwards
+ - day: Saturday, April 1
    sessions:
-    - title: Theme 'Share and Collaborate'
-    - title: Workshop - Software Carpentry (day 2)
-    - title: Workshop - Library Carpentry (day 1)
-    - title: Miniseminar - "Digital tools for managing and sharing research data"
-    - title: Stands - Research related service providers
-    - title: Workshop - Jupyter Notebook
- - day: Friday, 3 February
-   sessions:
-    - title: Theme 'Women in Data Science'
-    - title: Workshop - Library Carpentry (day 2)
-    - title: Workshop - Big Data with pyspark
-    - title: Workshop - LaTex
-    - title: Presentations from Oslo Women in Data Science
-    - title: Live streaming of the 'Women in Data Science' conference (evening)
-
+    - title: Coffee and light refreshments, Science-Engineering Library, 9am
+    - title: Workshops (TBA), Main Library and Science-Engineering Library, 9:30am onwards
+    - title: Unconference, Collaborative Classroom of Science-Engineering, 9:30am onwards
+speakers:
+ - name: TBD
+   img: TBD
+   blurb: TBD
 sponsors:
- - name: 'University of Oslo Science Library'
-   img: UiO_Seal_A_ENG.png
+ - name: CyVerse
+   link: http://www.cyverse.org/
+ - name: The BIO5 Institute
+   link: http://www.bio5.org/
+ - name: University of Arizona Libraries
+   link: http://library.arizona.edu/
 ---
 
 <!-- Navigation -->
@@ -120,23 +116,26 @@ sponsors:
                 <h1>Schedule</h1>
                 <hr class="star-primary">
             </div>
+        </div>
         <div class="row">
             <div class="col-lg-12 text-center">
               <p>{{page.schedule}}</br></br></p>
             </div>
         </div>
+
+        <div class="row">
             {% for d in page.days %}
-                <div class="col-md-4">
-                        <h4>{{ d.day }}</h4>                        
-                        <div class='list-group'>
-                        {% for session in d.sessions %}                  
-                                <a class='list-group-item'>{{ session.title }}</a>
-                        {% endfor %}
-                        </div>                        
-                </div>
+            <div class="col-md-6">
+              <h4>{{ d.day }}</h4>
+              <div class='list-group'>
+                {% for session in d.sessions %}
+                <a class='list-group-item'>{{ session.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
             {% endfor %}
         </div>
-    </div>
+    <div class='container'>
 </section>
 
 <hr class='divider'></hr>
@@ -169,7 +168,7 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <p>Registration through the individual workshop's websites, see <a href="http://www.ub.uio.no/english/courses-events/events/ureal/2017/170201ResBaz.html">the full schedule</a>.</p>
+                <p>Registration opening soon</p>
             </div>
         </div>
     </div>
@@ -177,27 +176,18 @@ sponsors:
 
 <hr class='divider'></hr>
 
-<!-- Speakers
+<!-- Speakers -->
 <section id='speakerSection'>
     <div class='container'>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Meet Our Speakers</h1>
-                <hr class="star-primary">
-                {% for speaker in page.speakers %}
-                    <div class='col-md-3 speaker-tile'>
-                        <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>
-                        <h4>{{ speaker.name }}</h4>
-                        <p>{{ speaker.blurb }}</p>
-                    </div>
-                {% endfor %}
+                <h1>Speakers: TBD</h1>
             </div>
 
         </div>
     </div>
 </section>
--->
- 
+
 <hr class='divider'></hr>
 
 <!-- Sponsors -->
@@ -214,7 +204,6 @@ sponsors:
               <p>Many thanks to our sponsors for helping to bring the Research Bazaar to {{page.location}}.</p>
               {% for sponsor in page.sponsors %}
                   <div class='sponsor-tile'>
-                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
                       <h4>{{ sponsor.name }}</h4>
                   </div>
               {% endfor %}

@@ -4,47 +4,33 @@ permalink: christchurch
 
 location: Christchurch
 
-dates: 8 February - 9 February, 2017
+dates: 8th - 9th  February, 2017
 
-splashImage: img/christchurch.jpg
+splashImage: /img/christchurch.jpg
 
 map: sites/christchurch.geojson
 
 
-about: Research Bazaar 2017 in Christchurch!
 
-schedule: Schedule to be announced
-days:
- - day: Wednesday, 8th February
-   sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
- - day: Thursday, 9th February
-   sessions:
-    - title: session 1
-    - title: session 2
-    - title: session 3
-    - title: evening
+about: Resbaz 2017 in Christchurch is full.  If you'd like to attend a Software Carpentry course this year, please contact Anton Angelo at anton.angelo@canterbury.ac.nz The programme and information can be found at <a href='https://antonangelo.github.io/2017-08-02-canterbury/'>https://antonangelo.github.io/2017-08-02-canterbury/</a>  
 
-speakers:
- - name:
-   img: img/placehold.jpg
-   blurb:
- - name: TBC
-   img: img/speakerTBC.jpg
-   blurb: Our KeyStory speakers are still to be confirmed - watch this space!
- - name: TBC
-   img: img/speakerTBC.jpg
-   blurb: Our KeyStory speakers are still to be confirmed - watch this space!
+classes:
+ - class: Main Streams - Software Carpentry
+   descriptions:
+    - name: The Unix Shell
+      id: shell
+      blurb: Use of the shell is fundamental to using a wide range of other powerful tools and computing resources (including “high-performance computing” supercomputers). These lessons will start you on a path towards using these resources effectively.
+    - name: R
+      id: rprog
+      blurb: The R language provides a flexible and powerful environment for data analysis and visualisation.  This workshop will introduce the R language and will teach you some key programming skills.
+    - name: Git
+      id: git
+      blurb: Version control is the lab notebook of the digital world - it’s what professionals use to keep track of what they’ve done and to collaborate with other people. Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on.
+
 sponsors:
- - name: 'Sponsor Number One'
-   img: fake-sponsor.png
- - name: 'Sponsor Number Two'
-   img: fake-sponsor.png
- - name: 'Sponsor Number Three'
-   img: fake-sponsor.png
+ - name: 'Catalyst IT'
+   img: catalyst.png
+ 
 ---
 
 <!-- Navigation -->
@@ -130,12 +116,12 @@ sponsors:
         </div>
             {% for d in page.days %}
                 <div class="col-md-4">
-                        <h4>{{ d.day }}</h4>
+                        <h4>{{ d.day }}</h4>                        
                         <div class='list-group'>
-                        {% for session in d.sessions %}
+                        {% for session in d.sessions %}                  
                                 <a class='list-group-item'>{{ session.title }}</a>
                         {% endfor %}
-                        </div>
+                        </div>                        
                 </div>
             {% endfor %}
         </div>
@@ -227,7 +213,7 @@ sponsors:
 
 
 <!-- TEST SCRIPT -->
-<script>
+<script> 
     // var listElements1 = document.getElementsByClassName('list-group-item')
     // console.log(listElements1)
     var toolList = document.getElementById('tool-list')
@@ -241,3 +227,4 @@ sponsors:
         }
 
 </script>
+

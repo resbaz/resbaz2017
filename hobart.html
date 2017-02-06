@@ -56,15 +56,15 @@ classes:
     - name: How to write a reproducible paper
       id: reprod
       blurb: Modern research relies heavily on software and code. These aspects of the research methodology are rarely (if ever) documented in modern research papers, which has led to a reproducibility crisis in published computational research. This talk will outline the practical steps you can take to ensure that your papers are reproducible.
-    - name: Introduction to the NeCTAR Cloud
+    - name: TPAC Nectar Cloud Starter
       id: nectar
-      blurb: TBA
+      blurb: Is your laptop running out of battery? Or disk space? Do you need a server computer to work with your colleague? Or colleagues? In Canada? The Nectar Research Cloud provides. It provides flexible ways of accessing many CPU and GB, or TB, or even PB. At bandwidths that measure in the Gb. Better yet, it's free if you work or study at an Australian research institution. Join this Cloud Starter class to learn hands-on how to launch your own virtual machine in the Nectar Cloud to help take your Resbaz Bash, R and Python skills to the next level and to the next scale.
     - name: Managing marine and Antarctic data at UTAS
       id: utasdata
       blurb: TBA
-    - name: Introducing the Australian National Data Service
-      id: ands
-      blurb: TBA
+    - name: R-Ladies meetup
+      id: rladies
+      blurb: R-Ladies is a world-wide organisation to promote gender diversity in the R community. The purpose of this session is to gauge interest in starting a Hobart chapter.
     - name: Installing and navigating the scientific R stack
       id: scir
       blurb: This session will give an overview of the major R libraries used for data science. Participants will learn how to manage and install these libraries.
@@ -73,18 +73,21 @@ classes:
     - name: Data science consultations
       id: consults
       blurb: Come along and listen to our experienced Software Carpentry instructors interview willing researchers about their personal data science workflows. If you're feeling brave you can put your hand up to be an interviewee, otherwise sit back and join in the audience discussion.
-    - name: Accessing and processing data from IMOS
+    - name: Oceans and Clouds. Managing AODN Infrastructure in the Cloud
       id: imos
-      blurb: TBA
+      blurb: This session provides an overview of how the Australian Ocean Data Network (AODN) team leverages cloud technologies to support developing services for delivering oceanographic data. Utilising these technologies allows us to deliver reliable and scalable solutions for data availability. In this session, we provide an introduction to some of the most useful cloud services and insight into future possibilities for AODN infrastructure.
     - name: Getting started with netCDF
       id: netcdf
       blurb: This session will give an overview of the basic concepts you need to understand when dealing with data stored in netCDF format (e.g. common metadata conventions). A demonstration of how to interact with netCDF files using Python and R will be given, followed a discussion of tools that can be used when netCDF files get really large.
-    - name: Introduction to Effective Formal Presentations
+    - name: Speechcraft. Introduction to effective formal presentations.
       id: speech
       blurb: A critical skill for any scientist is the ability to effectively communicate your ideas. This course is a very short introduction to effective public speaking, and introduces some basic concepts such as how to prepare and structure your speech, the use of visual aids and speaking with confidence. Each participant will be asked to deliver a 2 minute speech and will be given a critical evaluation.
     - name: How to write an executable paper
       id: exec
-      blurb: TBA
+      blurb: In this session Tom will present a range of options to integrate figure and table creation into the final document. This process allows the figures, tables and values within the document to be automatically updated as data is corrected or added too.  The aspirational goal would be to be able to program much of the final output as well (increase / neutral / decrease statements), which could be useful for regular reporting, but this useful feature is less clear in an academic context.
+    - name: Oceanographic data analysis using Ferret
+      id: Ferret
+      blurb: This session will give an introduction to Ferret, which is a data analysis and visualisation environment used extensively in the oceanography community.
 ---
 
 <!-- Navigation -->
@@ -147,9 +150,9 @@ classes:
         <div class="row">
             <div class="col-lg-12 text-center">
               <p>The Research Bazaar is a worldwide festival promoting the digital literacy emerging at the center of modern research.
-              During the first week of February 2017, events will be held at a number of university campuses around the globe.</p>
-              <p><a href="http://datasciencehobart.github.io/">Data Science Hobart</a> is proud to be hosting the inaugrual ResBaz event in Tasmaina.
-              The aim of the event is to equip researchers from all career stages with the digital skills and tools required to do their research better, faster and smarter.</p>
+              During the month of February 2017, events will be held at a number of university campuses around the globe.</p>
+              <p><a href="http://datasciencehobart.github.io/">Data Science Hobart</a> is proud to be hosting the inaugural ResBaz event in Tasmania.
+              The aim of the event is to equip researchers from all career stages and disciplines with the digital skills and tools required to do their research better, faster and smarter.</p>
             </div>
         </div>
     </div>
@@ -168,21 +171,20 @@ classes:
            <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3>Day 1 & 2: Software Carpentry</h3>
-                    <p>Over the first two days of the workshop, two Software Carpentry workshops will run simultaneously.
+                    <p>Over the first two days of the event, two Software Carpentry workshops will run simultaneously.
                     These hands-on workshops will cover basic computer programming concepts and tools for researchers,
                     including program design, version control, data management, and task automation.
                     Participants can elect to participate in either the 
                     <a href="https://datasciencehobart.github.io/2017-01-31-resbaztas-python/" target="_blank">Python stream</a>
-                    or <a href="https://datasciencehobart.github.io/2017-01-31-resbaztas-python/" target="_blank">R stream</a>. 
-                    Click the links for more details.</p>
+                    or <a href="https://datasciencehobart.github.io/2017-01-31-resbaztas-r/" target="_blank">R stream</a>. 
+                    Click the links for more details, including the schedule for each day.</p>
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3>Day 3: Community Day</h3>
                     <p>On the final day of the event, data service providers and individual researchers from the local
-                    community will deliver a wide variety of talks and workshops. Below is a list of confirmed classes
-                    (click the titles for a short description). If you'd be interested in presenting at Community Day, please <a href="#contactSection">get in touch</a>. 
-                    We will progressively update the class list (and provide a more detailed timetable) as more volunteer presenters come forward.</p>
+                    community will deliver a wide variety of talks and workshops. Click the links below to view a description of each of the Community Day classes.</p>
+                <br/>
                 </div>
             {% for d in page.classes %}
                 <div class = "col-md-6 text-center">
@@ -196,6 +198,10 @@ classes:
                     </div>
                 </div>
             {% endfor %}
+                <div class="col-lg-12 text-center">
+                    <h4>Community Day schedule</h4>
+                    <p><iframe width="100%" height="600" src="https://docs.google.com/spreadsheets/d/1p7FuVNCU7aLXoq4qgtKKXE2m4U3hBzcxs7RADXepk_w/pubhtml?widget=true&amp;headers=false"></iframe></p>
+                </div>
         </div>
     </div>
 </section -->
@@ -213,7 +219,9 @@ classes:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <p>Registrations go live at midday on Friday 2 December. Places are strictly limited, so get in early!</p>
+                <p>Tickets are available for all three days of the event or just the community day.<br />
+                 Places are strictly limited, so get in early!</p>
+                
                 <p><a href="https://www.eventbrite.com.au/e/the-research-bazaar-tickets-29662163329" target="_blank" class="btn btn-lg btn-outline light-bkg">
                 <i class="fa fa-users"></i> Register Here</a>
                 </p>
@@ -254,10 +262,17 @@ classes:
 <section id="mapSection">
     <div class='container'>
         <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1>Venue</h1>
-                    <hr class="star-primary">
-                </div>
+            <div class="col-lg-12 text-center">
+                <h1>Venue</h1>
+                <hr class="star-primary">
+            </div>
+
+            <div class="col-lg-12 text-center">
+                <p><strong>Institute for Marine and Antarctic Studies</strong><br />
+                   20 Castray Esplanade, Battery Point
+                </p>
+            </div>
+ 
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <script src="https://embed.github.com/view/geojson/resbaz/resbaz2017/gh-pages/{{page.map}}"></script>
             </div>
@@ -267,50 +282,33 @@ classes:
 
 <hr class='divider'></hr>
 
-<!-- Speakers -->
-<!-- section id='speakerSection'>
-    <div class='container'>
+
+
+<!-- Sponsors -->
+<section id='sponsors'>
+    <div class = 'container'>
+        <div class = "row">
+            <div class = "col-lg-12 text-center">
+                <h2>Our sponsors</h2>
+                <hr class = "star-primary">
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Meet Our Speakers</h1>
-                <hr class="star-primary">
-                {% for speaker in page.speakers %}
-                    <div class='col-md-3 speaker-tile'>
-                        <img class='img-circle' src={{site.baseurl}}/{{ speaker.img }}></img>
-                        <h4>{{ speaker.name }}</h4>
-                        <p>{{ speaker.blurb }}</p>
-                    </div>
-                {% endfor %}
+              <p>A big thanks to the following sponsors, who have kindly covered the costs of the food for the event:<br/>
+              <strong>Institute for Marine and Antarctic Studies<br/>
+              UTAS School of Physical Sciences<br/>
+              Integrated Marine Observing System<br/>
+              CSIRO Oceans and Atmosphere<br/>
+              Antarctic Climate and Ecosystems CRC<br/>
+              UTAS Faculty of Science, Engineering and Technology<br/>
+              Rod Jager Consulting</strong><br/>
+              </p>
             </div>
-
         </div>
     </div>
 </section>
 
-<hr class='divider'></hr -->
-
-<!-- Sponsors -->
-<!-- section id="sponsors">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Our Sponsors</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-              <p>Many thanks to our sponsors for helping to bring the Research Bazaar to {{page.location}}.</p>
-              {% for sponsor in page.sponsors %}
-                  <div class='sponsor-tile'>
-                      <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
-                      <h4>{{ sponsor.name }}</h4>
-                  </div>
-              {% endfor %}
-          </div>
-        </div>
-    </div>
-</section -->
 
 <!-- TEST SCRIPT -->
 <script> 
