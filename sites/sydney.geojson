@@ -5,11 +5,11 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[151.201320, -33.883827]
+                "coordinates":[151.201319, -33.880989]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "University of Technology Sydney"
+                "details": "University of Technology Sydney Business School (Building 8)"
             }
         }
     ]
