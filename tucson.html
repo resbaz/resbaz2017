@@ -12,7 +12,7 @@ map: sites/tucson.geojson
 
 accommodation: University of Arizona
 
-about: Introducing Research Bazaar, or &#35;ResBazAZ for short, a worldwide festival promoting the digital literacy emerging at the center of modern research. Research Bazaar started two years ago in Melbourne, Australia and has gone global. This year it comes to UA for the first time! The event aims to equip researchers from all career stages with the digital skills and tools required to do their research better, faster, and smarter.<br/><br/>Think <a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">unconference</a> coupled with highly useful workshops to increase your skill set exponentially!
+about: Introducing Research Bazaar, or &#35;ResBazAZ for short, a worldwide festival promoting the digital literacy emerging at the center of modern research. Research Bazaar started two years ago in Melbourne, Australia and has gone global. This year it comes to UA for the first time! The event aims to equip researchers from all career stages with the digital skills and tools required to do their research better, faster, and smarter.<br/><br/>Think <a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">unconference</a> coupled with highly useful workshops to increase your skill set exponentially!<br/><br/><strong>Bonus</strong>&#58; All attendees will receive a free professional license to <a href="https://www.overleaf.com/" target="_blank">Overleaf</a>, a collaborative LaTeX and Rich Text writing and publishing tool.
 
 schedule: Please join us Friday, March 31 and Saturday, April 1 for our free event. Here are the basics:<br/><br/>Friday is principally designed to get to know one another and create affinity groups in <a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">“unconference”</a> style. In other words, talk to people, discover opportunities to learn from one another, spontaneously work on projects, bring your questions to look for answers and crowd source solutions. Never been to an unconference before? Find out more about unconferences <a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">here</a>.<br/><br/>10am-12pm Welcome and Lightning Talks (stage at the UA Mall)<br/>Participants will introduce themselves through short lightning talks about what they research,  their skillset, what they want to know, questions they have. The only requirement is that you keep it under 10 minutes, and your talk somehow relates to the general themes of digital literacy and modern research. Easy, right?<br/><br/>Throw up your ideas for pop-up sessions. Want to talk about data visualization? Python? GIS? Social Media? GitHub? We will have a central place to coordinate and facilitate your groups meeting among tents on the mall. You can get started early by adding your ideas now.<br/><br/>12pm-4pm<br/>Unconference style meetups. Feel free to gather in the tents, go as a group to lunch, or propose a dedicated workshop for Saturday.<br/><br/>4pm<br/>Unsponsored happy hour. Continue the party at Pasco with the ResBaz AZ coordinators.<br/><br/>Saturday (Science-Engineering Library)<br/><br/>9am Join us for a welcoming Keynote at the Science-Engineering Library to start the day. Coffee and light refreshments will be served! <br/>Workshops begin at 10am in both the Main Library and Science-Engineering Library<br/>Topics include R-Studio, Graph Databases, Advanced git, Storymaps and ArcGIS, Virtual Reality, Stream Processing, Drones, 3D Modeling and more! The Unconference continues in the Collaborative Classroom of Science-Engineering all day! Continue the conversations, meet new people, work on projects.
 
@@ -57,6 +57,8 @@ sponsors:
    link: http://library.arizona.edu/
  - name: Office of Research, Discovery &amp; Innovation
    link: http://research.arizona.edu/
+ - name: Overleaf
+   link: https://www.overleaf.com/
 ---
 
 <!-- Navigation -->
@@ -209,7 +211,7 @@ sponsors:
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-             <p>Registration <a href="https://goo.gl/forms/CQ1gPiIv868Aik2n2">here</a>. </p>
+                <p>Registration <a href="https://goo.gl/forms/CQ1gPiIv868Aik2n2">here</a>. </p>
             </div>
         </div>
     </div>
@@ -249,7 +251,7 @@ sponsors:
               <p>Many thanks to our sponsors for helping to bring the Research Bazaar to {{page.location}}.</p>
               {% for sponsor in page.sponsors %}
                   <div class='sponsor-tile'>
-                      <h5><a href="{{ sponsor.link }}" target="_blank">{{ sponsor.name }}</a></h5>
+                      <h3><a href="{{ sponsor.link }}" target="_blank">{{ sponsor.name }}</a></h3>
                   </div>
               {% endfor %}
           </div>
