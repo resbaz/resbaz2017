@@ -5,11 +5,11 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[-110.952187, 32.231913]
+                "coordinates":[-110.9501887, 32.231893]
             },
             "properties": {
                 "marker-color": "#2b3990",
-                "details": "The University of Arizona"
+                "details": "The Mall, Engineering & Science Library - The University of Arizona"
             }
         }
     ]
