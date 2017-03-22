@@ -138,7 +138,7 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates":[-110.952187, 32.231913]
+                "coordinates":[-110.950188, 32.231893]
             },
             "properties": {
                 "marker-color": "#2b3990",

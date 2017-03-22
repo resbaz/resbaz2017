@@ -12,9 +12,9 @@ map: sites/tucson.geojson
 
 accommodation: University of Arizona
 
-about: Introducing Research Bazaar, or &#35;ResBazAZ for short, a worldwide festival promoting the digital literacy emerging at the center of modern research. Research Bazaar started two years ago in Melbourne, Australia and has gone global. This year it comes to UA for the first time! The event aims to equip researchers from all career stages with the digital skills and tools required to do their research better, faster, and smarter.<br/><br/>Think unconference coupled with highly useful workshops to increase your skill set exponentially!
+about: Introducing Research Bazaar, or &#35;ResBazAZ for short, a worldwide festival promoting the digital literacy emerging at the center of modern research. Research Bazaar started two years ago in Melbourne, Australia and has gone global. This year it comes to UA for the first time! The event aims to equip researchers from all career stages with the digital skills and tools required to do their research better, faster, and smarter.<br/><br/>Think <a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">unconference</a> coupled with highly useful workshops to increase your skill set exponentially!
 
-schedule: Please join us Friday, March 31 and Saturday, April 1 for our free event. Here are the basics:<br/><br/>Friday is principally designed to get to know one another and create affinity groups in “unconference” style. In other words, talk to people, discover opportunities to learn from one another, spontaneously work on projects, bring your questions to look for answers and crowd source solutions. Never been to an unconference before? Find out more about unconferences here.<br/><br/>10am-12pm Welcome and Lightning Talks (stage at the UA Mall)<br/>Participants will introduce themselves through short lightning talks about what they research,  their skillset, what they want to know, questions they have. The only requirement is that you keep it under 10 minutes, and your talk somehow relates to the general themes of digital literacy and modern research. Easy, right?<br/><br/>Throw up your ideas for pop-up sessions. Want to talk about data visualization? Python? GIS? Social Media? GitHub? We will have a central place to coordinate and facilitate your groups meeting among tents on the mall. You can get started early by adding your ideas now.<br/><br/>12pm-4pm<br/>Unconference style meetups. Feel free to gather in the tents, go as a group to lunch, or propose a dedicated workshop for Saturday.<br/><br/>4pm<br/>Unsponsored happy hour. Continue the party at Pasco with the ResBaz AZ coordinators.<br/><br/>Saturday (Science-Engineering Library)<br/><br/>9am Join us for a welcoming Keynote at the Science-Engineering Library to start the day. Coffee and light refreshments will be served! <br/>Workshops begin at 10am in both the Main Library and Science-Engineering Library<br/>Topics include R-Studio, Graph Databases, Advanced git, Storymaps and ArcGIS, Virtual Reality, Stream Processing, Drones, 3D Modeling and more! The Unconference continues in the Collaborative Classroom of Science-Engineering all day! Continue the conversations, meet new people, work on projects.
+schedule: Please join us Friday, March 31 and Saturday, April 1 for our free event. Here are the basics:<br/><br/>Friday is principally designed to get to know one another and create affinity groups in <a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">“unconference”</a> style. In other words, talk to people, discover opportunities to learn from one another, spontaneously work on projects, bring your questions to look for answers and crowd source solutions. Never been to an unconference before? Find out more about unconferences <a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">here</a>.<br/><br/>10am-12pm Welcome and Lightning Talks (stage at the UA Mall)<br/>Participants will introduce themselves through short lightning talks about what they research,  their skillset, what they want to know, questions they have. The only requirement is that you keep it under 10 minutes, and your talk somehow relates to the general themes of digital literacy and modern research. Easy, right?<br/><br/>Throw up your ideas for pop-up sessions. Want to talk about data visualization? Python? GIS? Social Media? GitHub? We will have a central place to coordinate and facilitate your groups meeting among tents on the mall. You can get started early by adding your ideas now.<br/><br/>12pm-4pm<br/>Unconference style meetups. Feel free to gather in the tents, go as a group to lunch, or propose a dedicated workshop for Saturday.<br/><br/>4pm<br/>Unsponsored happy hour. Continue the party at Pasco with the ResBaz AZ coordinators.<br/><br/>Saturday (Science-Engineering Library)<br/><br/>9am Join us for a welcoming Keynote at the Science-Engineering Library to start the day. Coffee and light refreshments will be served! <br/>Workshops begin at 10am in both the Main Library and Science-Engineering Library<br/>Topics include R-Studio, Graph Databases, Advanced git, Storymaps and ArcGIS, Virtual Reality, Stream Processing, Drones, 3D Modeling and more! The Unconference continues in the Collaborative Classroom of Science-Engineering all day! Continue the conversations, meet new people, work on projects.
 
 days:
  - day: Friday, March 31
@@ -51,10 +51,12 @@ speakers:
 sponsors:
  - name: CyVerse
    link: http://www.cyverse.org/
- - name: The BIO5 Institute
+ - name: BIO5 Institute
    link: http://www.bio5.org/
  - name: University of Arizona Libraries
    link: http://library.arizona.edu/
+ - name: Office of Research, Discovery &amp; Innovation
+   link: http://research.arizona.edu/
 ---
 
 <!-- Navigation -->
@@ -80,9 +82,11 @@ sponsors:
                 <li class="page-scroll">
                     <a href="#registerSection">Register</a>
                 </li>
+                <!--
                 <li class="page-scroll">
                     <a href="#speakerSection">Speakers</a>
                 </li>
+                -->
             </ul>
         </div>
     </div>
@@ -135,6 +139,14 @@ sponsors:
             </div>
         </div>
         <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Please join us Friday, March 31 and Saturday, April 1 for our free event. Here are the basics:<br/><br/>Friday is principally designed to get to know one another and create affinity groups in <a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">“unconference”</a> style. In other words, talk to people, discover opportunities to learn from one another, spontaneously work on projects, bring your questions to look for answers and crowd source solutions. Never been to an unconference before? Find out more about unconferences <a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">here</a>.</p>
+                <p>This is <strong><em>your</em></strong> unconference. The schedule is entirely interactive. You can grab a free slot and add your own topic, or suggest a topic you'd like somebody to present on. You have the power!</p>
+                <p>The live schedule is shown below. <a href="https://docs.google.com/spreadsheets/d/1PWYZkaQ1wMSUjJ9zsz9pltl6SHxnTfQ0t4G89FPo684/edit" target="_blank">Click here for the editable Google Sheet</a></p>
+            </div>
+        </div>
+<!--
+        <div class="row">
             {% for d in page.days %}
             <div class="col-md-6">
               <h4>{{ d.day }}</h4>
@@ -146,11 +158,23 @@ sponsors:
             </div>
             {% endfor %}
         </div>
-
         <div class="row">
             <div class="col-lg-12 text-center">
               <p>{{page.schedule}}<br><br></p>
             </div>
+        </div>
+    </div>
+-->
+    <div class="row">
+        <h4>Friday, March 31</h4>
+        <div>
+            <iframe width="100%" height="770" src="https://docs.google.com/spreadsheets/d/1PWYZkaQ1wMSUjJ9zsz9pltl6SHxnTfQ0t4G89FPo684/pubhtml?gid=1342990224&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        </div>
+    </div>
+    <div class="row">
+        <h4>Saturday, April 1</h4>
+        <div>
+            <iframe width="100%" height="770" src="https://docs.google.com/spreadsheets/d/1PWYZkaQ1wMSUjJ9zsz9pltl6SHxnTfQ0t4G89FPo684/pubhtml?gid=1960366771&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
         </div>
     </div>
 </section>
@@ -191,9 +215,12 @@ sponsors:
     </div>
 </section>
 
+<!--
 <hr class='divider'></hr>
+-->
 
 <!-- Speakers -->
+<!--
 <section id='speakerSection'>
     <div class='container'>
         <div class="row">
@@ -204,6 +231,7 @@ sponsors:
         </div>
     </div>
 </section>
+-->
 
 <hr class='divider'></hr>
 
@@ -221,7 +249,7 @@ sponsors:
               <p>Many thanks to our sponsors for helping to bring the Research Bazaar to {{page.location}}.</p>
               {% for sponsor in page.sponsors %}
                   <div class='sponsor-tile'>
-                      <h4>{{ sponsor.name }}</h4>
+                      <h5><a href="{{ sponsor.link }}" target="_blank">{{ sponsor.name }}</a></h5>
                   </div>
               {% endfor %}
           </div>

@@ -24,7 +24,7 @@ If you struggle to get Jekyll working on your computer you could try to use the 
 vagrant up
 vagrant ssh
 cd /vagrant/
-bundle exec jekyll serve --host 10.0.30.15
+bundle exec jekyll serve --watch --verbose --incremental --host 10.0.30.15
 ```
 
 Note that the `vagrant up` command can take a while the first time you run it.
