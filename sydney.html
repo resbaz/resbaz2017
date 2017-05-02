@@ -122,10 +122,12 @@ sponsors:
                 <div class="col-md-4">
                         <h4>{{ d.day }}</h4>                        
                         <div class='list-group'>
-                        {% for session in d.sessions %}                  
+                            {% for session in d.sessions %}
+                            <div class='list-group-item text-center'>
                                 <a class='list-group-item' id={{ session.id }}>{{ session.title }}</a><br>
                                 <p class='small hidden' id={{ session.id }}Blurb>{{ session.blurb }}</p>
-                        {% endfor %}
+                            </div>
+                            {% endfor %}
                         </div>                        
                 </div>
             {% endfor %}
@@ -216,6 +218,7 @@ sponsors:
               {% endfor %}
           </div>
         </div>
+        <hr class="star-primary">
         <p style="margin: auto; text-align: center;"><a href="https://www.flickr.com/photos/extramaster/16405948251/in/photolist-qZJLQK-8SDVkG-28Wkxn-dYffo2-p9jrzT-9NEtYQ-fDW28n-eYuALz-otgexF-6ocQwE-7HnnrW-o7QaZr-enrDq-c8a4ZE-7HnmL1-o7wXTT-nPJBpk-c8adrW-fDVZ3Z-7HntqG-c8acmA-7Hiqmr-7HiBvn-c8a6s3-pz8Lhx-7HniUQ-7Hnq8Q-c8aarG-efJYww-atpHUq-qo4ZGw-c8a7V7-7Hnqso-7Hipzt-fpeWtJ-7HnjkU-c89XT5-c8a8Ho-HntQv3-aK2goB-efDcXi-7HivNn-c8a1eu-9Ddq1D-HGj6iw-crJbFQ-7Hnu1J-5EbUg4-kFmrqh-o767TG">UTS Building</a> title image <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY</a> from <a href="https://www.flickr.com/people/extramaster/?rb=1">extramaster</a></p>
     </div>
 </section>
