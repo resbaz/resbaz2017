@@ -16,7 +16,12 @@ schedule: Our schedule is still being finalised, so watch this space for our exc
 days:
  - day: Day 1
    sessions:
-    - title: Session schedules TBA
+    - title: Programming with Python
+      id: scpy1
+      blurb: Day one of a two day workshop introducing you to the programming language Python with lots of hands-on excerises.
+    - title: Programming with R (Beginner)
+      id: scrbeg1
+      blurb: Day one of a two day workshop introducing you to the programming language R with lots of hands-on exercises.
  - day: Day 2
    sessions:
     - title: Session schedules TBA
@@ -118,7 +123,8 @@ sponsors:
                         <h4>{{ d.day }}</h4>                        
                         <div class='list-group'>
                         {% for session in d.sessions %}                  
-                                <a class='list-group-item'>{{ session.title }}</a>
+                                <a class='list-group-item' id={{ session.id }}>{{ session.title }}</a><br>
+                                <p class='small hidden' id={{ session.id }}Blurb>{{ session.blurb }}</p>
                         {% endfor %}
                         </div>                        
                 </div>
