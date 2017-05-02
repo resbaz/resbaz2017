@@ -232,6 +232,7 @@ sponsors:
     console.log('This should print to the console');
     console.log('toolList ' + toolList);
     var listElements = toolList.getElementsByClassName('list-group-item')
+    console.log('listElements' + listElements);
     for(var i=0; i<listElements.length; i++){
             listElements[i].children[0].onclick = function(){
                  console.log("listElement " + listElements[i]);
