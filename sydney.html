@@ -228,10 +228,11 @@ sponsors:
 <script> 
     // var listElements1 = document.getElementsByClassName('list-group-item')
     // console.log(listElements1)
-    var toolList = document.getElementById('tool-list')
+    // This script is used to hide and display session blurbs in the Schedule when the session is clicked on by the user
+    var selectedSection = document.getElementById('scheduleSection')
     console.log('This should print to the console');
-    console.log('toolList ' + toolList);
-    var listElements = toolList.getElementsByClassName('list-group-item')
+    console.log('selectedSection ' + selectedSection);
+    var listElements = selectedSection.getElementsByClassName('list-group-item')
     console.log('listElements' + listElements);
     console.log('Length of listElements ' + listElements.length);
     for(var i=0; i<listElements.length; i++){
