@@ -125,7 +125,7 @@ sponsors:
                             {% for session in d.sessions %}
                             <div class='list-group-item text-center'>
                                 <a class='menuItem' id={{ session.id }}>{{ session.title }}</a><br>
-                                <p class='small hidden' id={{ session.id }}Blurb>{{ session.blurb }}</p>
+                                <p class='small hidden' id={{ session.id }}Blurb >{{ session.blurb }}</p>
                             </div>
                             {% endfor %}
                         </div>                        
@@ -232,8 +232,10 @@ sponsors:
     var listElements = toolList.getElementsByClassName('list-group-item')
     for(var i=0; i<listElements.length; i++){
             listElements[i].children[0].onclick = function(){
+                 console.log("listElement " + listElements[i]);
                  // toolList.getElementsByClassName('hidden').hide();
                  var idOfBlurb = this.id + 'Blurb';
+                 console.log("idOfBlurb " + idOfBlurb);
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
             }
         }
