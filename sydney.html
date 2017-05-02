@@ -234,11 +234,12 @@ sponsors:
     var listElements = toolList.getElementsByClassName('list-group-item')
     console.log('listElements' + listElements);
     for(var i=0; i<listElements.length; i++){
+            console.log('listElement outside click function' + listElement[i]);
             listElements[i].children[0].onclick = function(){
-                 console.log("listElement " + listElements[i]);
+                 console.log('listElement ' + listElements[i]);
                  // toolList.getElementsByClassName('hidden').hide();
                  var idOfBlurb = this.id + 'Blurb';
-                 console.log("idOfBlurb " + idOfBlurb);
+                 console.log('idOfBlurb ' + idOfBlurb);
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
             }
         }
