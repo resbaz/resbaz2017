@@ -168,7 +168,26 @@ sponsors:
                     <hr class="star-primary">
                 </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <script src="https://embed.github.com/view/geojson/resbaz/resbaz2017/gh-pages/{{page.map}}"></script>
+                <div id="venue-map" style="height: 420px; width: 620px; margin-left: auto; margin-right: auto;"></div>
+                <script>
+                var map = L.map('venue-map');
+                (function() {
+                  var request = new XMLHttpRequest();
+                  request.open('GET', '{{page.map}}', true);
+                  request.onload = function() {
+                    var data = JSON.parse(request.responseText);
+                  	var p = data.features[0].geometry.coordinates.slice(0).reverse();
+                    map.setView(p, 16);
+                    L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png').addTo(map);
+                  	L.geoJSON(data)
+                      .bindPopup(function (layer) {
+                        return layer.feature.properties.details;
+                    	})
+                      .addTo(map);
+                  };
+                  request.send();
+                }());
+                </script>
             </div>
         </div>
     </div>
