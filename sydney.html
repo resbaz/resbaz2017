@@ -272,19 +272,11 @@ sponsors:
     // console.log(listElements1)
     // This script is used to hide and display session blurbs in the Schedule when the session is clicked on by the user
     var selectedSection = document.getElementById('scheduleSection')
-    console.log('This should print to the console');
-    console.log('selectedSection ' + selectedSection);
     var listElements = selectedSection.getElementsByClassName('list-group-item')
-    console.log('listElements' + listElements);
-    console.log('Length of listElements ' + listElements.length);
     for(var i=0; i<listElements.length; i++){
-            console.log('The loop is running');
-            console.log('listElement outside click function' + listElements[i]);
             listElements[i].children[0].onclick = function(){
-                 console.log('listElement ' + listElements[i]);
                  // toolList.getElementsByClassName('hidden').hide();
                  var idOfBlurb = this.id + 'Blurb';
-                 console.log('idOfBlurb ' + idOfBlurb);
                  document.getElementById(idOfBlurb).classList.toggle('hidden');
             }
         }
