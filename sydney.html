@@ -72,24 +72,34 @@ speakers:
 sponsors:
  - name: 'PLATINUM SPONSOR: <br \>Dell EMC'
    img: DellEMC_Logo_Hz_Blue_rgb_150.png
+   website: "http://www.dell.com/au/p"
  - name: 'PLATINUM SPONSOR: <br \>Amazon Web Services'
    img: AWS_Logo_C_150.png
+   website: "https://aws.amazon.com/"
  - name: 'PLATINUM SPONSOR: <br \>Macquarie University'
    img: MQ_INT_HOR_RGB_POS_150.png
+   website: "https://www.mq.edu.au/"
  - name: 'PLATINUM SPONSOR: <br \>University of New South Wales'
    img: UNSW_LandscapeColourPos.png
+   website: "https://www.unsw.edu.au/"
  - name: 'PLATINUM SPONSOR: <br \>University Technology Sydney<br \>and UTS Library'
    img: UTS_and_Library_joint.png
+   website: "https://www.uts.edu.au/"
  - name: 'PLATINUM SPONSOR: <br \>The University of Sydney'
    img: UoS-CMYK-standard-logo-mono_150.png
+   website: "http://sydney.edu.au/"
  - name: 'PLATINUM SPONSOR: <br \>Australia Academic and<br \>Research Network'
    img: AARNet_logo_withtag_mono_150.png
+   website: "https://www.aarnet.edu.au/"
  - name: 'GOLD SPONSOR: <br \>Intersect'
    img: 150_intersect_logo.png
+   website: "http://www.intersect.org.au/"
  - name: 'SILVER SPONSOR: <br \>Sydney University Postgraduate<br \>Representative Association'
    img: Supra_Logo_150.png
+   website: "http://www.supra.net.au/"
  - name: 'ALSO SUPPORTED BY: <br \>ANDS, RDS and Nectar'
    img: Joint_ANDS_RDS_Nectar_logo.png
+   website: "http://www.ands.org.au/"
 ---
 
 <!-- Navigation -->
@@ -299,7 +309,9 @@ sponsors:
              <p>Many thanks to our sponsors and supporters who have helped bring the Research Bazaar to {{page.location}}.</p>
               {% for sponsor in page.sponsors %}
                   <div class='sponsor-tile'>
+                    <a href={{ sponsor.website }}>
                       <img src={{site.baseurl}}/img/sponsors/{{ sponsor.img }}></img>
+                    </a>
                       <h4>{{ sponsor.name }}</h4>
                   </div>
               {% endfor %}
